@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       USERNAME: ${{ github.event.pull_request.user.login }}
+      USER_URL: ${{ github.event.pull_request.user.html_url }}
     steps:
       - name: dump env
         run: env
@@ -24,5 +25,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '👋 Thank you ${{ env.USERNAME }}!'
+              body: '👋 Thank you @[${{ env.USERNAME }}](${{ env.USER_URL }})!'
             })
