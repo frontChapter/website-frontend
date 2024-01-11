@@ -9,7 +9,7 @@ jobs:
     # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     env:
-      USERNAME: ${{ github.event.pull_request.user.name }}
+      USERNAME: ${{ github.event.pull_request.user.login }}
     steps:
       - name: dump env
         run: env
