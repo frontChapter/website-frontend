@@ -20,5 +20,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '👋 Thank you @[${{ env.USERNAME }}](${{ env.USER_URL }})!'
+              body: 'Thank you [@${{ env.USERNAME }}](${{ env.USER_URL }}) ❤️\nYour changes has been merged to the `dev` branch. 🎉'
             })
