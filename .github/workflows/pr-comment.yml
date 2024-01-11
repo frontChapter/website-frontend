@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: dump env
         run: env
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - uses: actions/github-script@v6
         with:
           script: |
