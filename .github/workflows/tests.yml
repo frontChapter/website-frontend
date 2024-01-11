@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Check out files from GitHub
         uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.4.0
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
