@@ -9,14 +9,12 @@ jobs:
     # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Add comment to PR
-        env:
-          URL: ${{ github.event.issue.comments_url }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl \
-            -X POST \
-            $URL \
-            -H "Content-Type: application/json" \
-            -H "Authorization: token $GITHUB_TOKEN" \
-            --data '{ "body": "test" }'
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '👋 Thanks for reporting!'
+            })
