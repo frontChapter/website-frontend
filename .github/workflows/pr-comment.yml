@@ -12,13 +12,8 @@ jobs:
       USERNAME: ${{ github.event.pull_request.user.login }}
       USER_URL: ${{ github.event.pull_request.user.html_url }}
     steps:
-      - name: dump env
-        run: env
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - uses: actions/github-script@v6
+      - name: "Comment on the PR"
+        uses: actions/github-script@v6
         with:
           script: |
             github.rest.issues.createComment({
