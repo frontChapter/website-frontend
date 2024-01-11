@@ -9,9 +9,16 @@ on:
     branches:
       - dev
       - main
+    types: 
+      - opened
+      - edited
+      - synchronize
+      - reopened
+      - submitted
 
 jobs:
   lints:
+    if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     steps:
       - name: Check out files from GitHub
