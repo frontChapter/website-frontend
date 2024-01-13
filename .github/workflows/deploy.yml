@@ -1,0 +1,24 @@
+name: Deploy to Liara
+on:
+  push:
+    branches:
+      - main
+      - dev
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        uses: pnpm/action-setup@v2.4.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: pnpm
+      - name: Update Stage
+        if: github.ref == 'refs/heads/dev'
+        env:
+          LIARA_TOKEN: ${{ secrets.LIARA_API_TOKEN }}
+        run: |
+          pnpm add -g @liara/cli@5
+          liara deploy --app="fc-next" --api-token="$LIARA_TOKEN" --no-app-logs
