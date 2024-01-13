@@ -1,4 +1,4 @@
-name: Pull request comment after merge
+name: Actions on pull request after merge
 on:
   pull_request:
     types:
@@ -13,7 +13,7 @@ jobs:
       USER_URL: ${{ github.event.pull_request.user.html_url }}
     steps:
       - name: "Comment on the PR"
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             github.rest.issues.createComment({
@@ -21,4 +21,14 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: 'Thank you [@${{ env.USERNAME }}](${{ env.USER_URL }}) ❤️\nYour changes has been merged to the `dev` branch. 🎉'
+            })
+      - name: "Delete branch"
+        if: github.event.pull_request.head.ref != 'dev'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.git.deleteRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `heads/${context.pull_request.head.ref}`,
             })
