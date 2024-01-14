@@ -1,9 +1,24 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import '@/styles/globals.css';
 import Providers from './providers';
+import LocalFont from "next/font/local";
+import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const fontDana = LocalFont({
+  src: [
+    {
+      path: "../assets/fonts/dana/Dana-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/dana/Dana-Bold.woff",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  style: "normal",
+  display: "block",
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${fontDana.className} text-white bg-zinc-900`}>
         <Providers>{children}</Providers>
       </body>
     </html>
