@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fa" dir="rtl">
-      <body className={`${fontDana.variable} text-white bg-zinc-900 font-dana`}>
+    <html lang="fa" dir="rtl" className={fontDana.variable}>
+      <body className="bg-zinc-900 text-white">
         <Providers>{children}</Providers>
       </body>
     </html>
