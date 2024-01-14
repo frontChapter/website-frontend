@@ -4,18 +4,7 @@ import LocalFont from 'next/font/local';
 import '@/styles/globals.css';
 
 const fontDana = LocalFont({
-  src: [
-    {
-      path: "../assets/fonts/dana/Dana-Regular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../assets/fonts/dana/Dana-Bold.woff",
-      weight: "600",
-      style: "normal",
-    },
-  ],
+  src: '../assets/fonts/dana/DanaVF.woff2',
   variable: '--font-dana',
 });
 
