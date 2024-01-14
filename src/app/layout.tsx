@@ -16,8 +16,7 @@ const fontDana = LocalFont({
       style: "normal",
     },
   ],
-  style: "normal",
-  display: "block",
+  variable: '--font-dana',
 });
 
 export const metadata: Metadata = {
@@ -32,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fontDana.className} text-white bg-zinc-900`}>
+      <body className={`${fontDana.variable} text-white bg-zinc-900 font-dana`}>
         <Providers>{children}</Providers>
       </body>
     </html>
