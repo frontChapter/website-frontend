@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RecoilRoot } from 'recoil';
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   // Create a client for the react-query provider
@@ -9,7 +10,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        {children}
+        <RecoilRoot>{children}</RecoilRoot>
       </QueryClientProvider>
     </>
   );
