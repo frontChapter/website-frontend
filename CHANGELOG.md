@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/frontChapter/website-frontend/compare/v0.1.2...v0.1.3) (2024-01-14)
+
+
+### Features
+
+* add react-query ([f01e69c](https://github.com/frontChapter/website-frontend/commit/f01e69c4d8c02fb45f489cec4c42df18c25bebcf))
+
+
+### Bug Fixes
+
+* deploy workflow syntax ([656d0ab](https://github.com/frontChapter/website-frontend/commit/656d0ab7f379bb610221c047c1cdbb46f6d4bb63))
+* remove push events from tests workflow ([e5f9c8a](https://github.com/frontChapter/website-frontend/commit/e5f9c8ab88ecad3543b53d428dd513ddeed62b80))
+
 ### [0.1.2](https://github.com/frontChapter/website-frontend/compare/v0.1.1...v0.1.2) (2024-01-13)
 
 
