@@ -4,11 +4,12 @@ import Image from 'next/image';
 import imageVectorOrangeDesktop from '@/assets/images/home/hero-section-vector-orange-desktop.svg';
 import imageVectorGreenDesktop from '@/assets/images/home/hero-section-vector-green-desktop.svg';
 import imageVectorOrangeMobile from '@/assets/images/home/hero-section-vector-orange-mobile.svg';
-import imageSpeakerOne from '@/assets/images/home/hero-section-speaker-1.png';
-import imageSpeakerTwo from '@/assets/images/home/hero-section-speaker-2.png';
-import imageSpeakerThree from '@/assets/images/home/hero-section-speaker-3.png';
-import imageSpeakerFour from '@/assets/images/home/hero-section-speaker-4.png';
-import imageSpeakerFive from '@/assets/images/home/hero-section-speaker-5.png';
+import imageSpeakerDesktop from '@/assets/images/home/hero-section-speaker-desktop.png';
+import imageSpeakerOneMobile from '@/assets/images/home/hero-section-speaker-1-mobile.png';
+import imageSpeakerTwoMobile from '@/assets/images/home/hero-section-speaker-2-mobile.png';
+import imageSpeakerThreeMobile from '@/assets/images/home/hero-section-speaker-3-mobile.png';
+import imageSpeakerFourMobile from '@/assets/images/home/hero-section-speaker-4-mobile.png';
+import imageSpeakerFiveMobile from '@/assets/images/home/hero-section-speaker-5-mobile.png';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -23,7 +24,7 @@ export default function HeroSection() {
             <Image
               src={imageVectorOrangeMobile}
               alt="vector orange"
-              className="absolute left-0 top-72 w-full"
+              className="absolute left-0 top-[370px] w-full"
             />
           </div>
           {/* desktop */}
@@ -85,7 +86,7 @@ export default function HeroSection() {
           </div>
         </div>
         {/* images */}
-        <div className="w-full mt-20">
+        <div className="mt-20 w-full">
           {/* mobile */}
           <div className="lg:hidden">
             <Swiper
@@ -102,11 +103,11 @@ export default function HeroSection() {
               }}
             >
               {[
-                imageSpeakerOne,
-                imageSpeakerTwo,
-                imageSpeakerThree,
-                imageSpeakerFour,
-                imageSpeakerFive,
+                imageSpeakerOneMobile,
+                imageSpeakerTwoMobile,
+                imageSpeakerThreeMobile,
+                imageSpeakerFourMobile,
+                imageSpeakerFiveMobile,
               ].map((item, index) => {
                 return (
                   <SwiperSlide key={index}>
@@ -117,41 +118,11 @@ export default function HeroSection() {
             </Swiper>
           </div>
           {/* desktop */}
-          <div className="relative hidden lg:block">
+          <div className="relative lg:flex justify-center hidden">
             <Image
-              src={imageSpeakerOne}
+              src={imageSpeakerDesktop}
               alt="سخنرانان همایش"
-              width={360}
-              height={240}
-              className="absolute left-1/2 top-40 -translate-x-1/2"
-            />
-            <Image
-              src={imageSpeakerTwo}
-              alt="سخنرانان همایش"
-              width={360}
-              height={240}
-              className="absolute left-28 top-0"
-            />
-            <Image
-              src={imageSpeakerThree}
-              alt="سخنرانان همایش"
-              width={360}
-              height={240}
-              className="absolute right-36 top-0"
-            />
-            <Image
-              src={imageSpeakerFour}
-              alt="سخنرانان همایش"
-              width={360}
-              height={240}
-              className="absolute bottom-0 left-36 top-80"
-            />
-            <Image
-              src={imageSpeakerFive}
-              alt="سخنرانان همایش"
-              width={360}
-              height={240}
-              className="absolute right-28 top-80"
+              width={1100}
             />
           </div>
         </div>
