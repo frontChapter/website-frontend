@@ -118,7 +118,7 @@ export default function HeroSection() {
             </Swiper>
           </div>
           {/* desktop */}
-          <div className="relative lg:flex justify-center hidden">
+          <div className="relative hidden justify-center lg:flex">
             <Image
               src={imageSpeakerDesktop}
               alt="سخنرانان همایش"
