@@ -19,6 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "recoil": "^0.7.7",
+    "swiper": "^11.0.5",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7"
   },
