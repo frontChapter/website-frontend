@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
     "@tanstack/react-query": "^5.17.9",
     "axios": "^1.6.5",
     "class-variance-authority": "^0.7.0",
