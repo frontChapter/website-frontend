@@ -1,5 +1,5 @@
 'use client';
-import CommentBox from './CommentBox';
+import TweetCard from './TweetCard';
 // Import React icons
 import { RiTwitterXFill } from 'react-icons/ri';
 
@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 
-const CommentsSection = () => {
+const Tweets = () => {
   return (
     <div className="container">
       <div className="mb-4 flex justify-between items-center">
@@ -39,44 +39,44 @@ const CommentsSection = () => {
         },
       }}>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CommentBox />
+          <TweetCard />
         </SwiperSlide>
       </Swiper>
     </div>
   );
 };
 
-export default CommentsSection;
+export default Tweets;

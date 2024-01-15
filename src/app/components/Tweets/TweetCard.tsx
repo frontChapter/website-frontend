@@ -1,7 +1,7 @@
 import { RiTwitterXFill } from 'react-icons/ri';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-const CommentBox = () => {
+const TweetCard = () => {
   return (
     <div className="flex w-[17rem] flex-col gap-3 rounded-xl bg-zinc-800 p-4">
       <div className="flex justify-between">
@@ -40,4 +40,4 @@ const CommentBox = () => {
   );
 };
 
-export default CommentBox;
+export default TweetCard;

@@ -1,9 +1,9 @@
-import CommentsSection from "@/app/components/Comments/Comments";
+import Tweets from '@/app/components/Tweets/Tweets';
 
 export default function Home() {
   return (
     <main className="container py-4">
-      <CommentsSection /> 
+      <Tweets />
     </main>
   );
 }
