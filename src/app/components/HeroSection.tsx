@@ -19,12 +19,12 @@ export default function HeroSection() {
         <Image
           src={imageVectorOrange}
           alt="vector orange"
-          className="absolute bottom-0 right-0 top-0 object-contain"
+          className="absolute right-0"
         />
         <Image
           src={imageVectorGreen}
           alt="vector green"
-          className="absolute bottom-0 left-0 top-0"
+          className="absolute left-0"
         />
         {/* texts */}
         <div className="relative z-10 w-full space-y-5 sm:max-w-xl md:max-w-2xl lg:max-w-[713px]">
@@ -72,7 +72,7 @@ export default function HeroSection() {
         </div>
         {/* images */}
         <div className="w-full">
-          {/* for mobile */}
+          {/* mobile */}
           <div className="lg:hidden">
             <Swiper
               breakpoints={{
@@ -101,6 +101,44 @@ export default function HeroSection() {
                 );
               })}
             </Swiper>
+          </div>
+          {/* desktop */}
+          <div className="relative hidden lg:block">
+            <Image
+              src={imageSpeakerOne}
+              alt="سخنرانان همایش"
+              width={360}
+              height={240}
+              className="absolute left-1/2 top-40 -translate-x-1/2"
+            />
+            <Image
+              src={imageSpeakerTwo}
+              alt="سخنرانان همایش"
+              width={360}
+              height={240}
+              className="absolute left-28 top-0"
+            />
+            <Image
+              src={imageSpeakerThree}
+              alt="سخنرانان همایش"
+              width={360}
+              height={240}
+              className="absolute right-36 top-0"
+            />
+            <Image
+              src={imageSpeakerFour}
+              alt="سخنرانان همایش"
+              width={360}
+              height={240}
+              className="absolute bottom-0 top-80 left-36"
+            />
+            <Image
+              src={imageSpeakerFive}
+              alt="سخنرانان همایش"
+              width={360}
+              height={240}
+              className="absolute top-80 right-28"
+            />
           </div>
         </div>
       </div>
