@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import imageVectorOrange from '@/assets/images/home/hero-section-vetor-orange.png';
-import imageVectorGreen from '@/assets/images/home/hero-section-vector-green.png';
+import imageVectorOrangeDesktop from '@/assets/images/home/hero-section-vector-orange-desktop.svg';
+import imageVectorGreenDesktop from '@/assets/images/home/hero-section-vector-green-desktop.svg';
+import imageVectorOrangeMobile from '@/assets/images/home/hero-section-vector-orange-mobile.svg';
 import imageSpeakerOne from '@/assets/images/home/hero-section-speaker-1.png';
 import imageSpeakerTwo from '@/assets/images/home/hero-section-speaker-2.png';
 import imageSpeakerThree from '@/assets/images/home/hero-section-speaker-3.png';
@@ -14,18 +15,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function HeroSection() {
   return (
     <section className="relative">
-      <div className="container flex flex-col items-center gap-y-16">
+      <div className="container flex flex-col items-center">
         {/* vectors */}
-        <Image
-          src={imageVectorOrange}
-          alt="vector orange"
-          className="absolute right-0"
-        />
-        <Image
-          src={imageVectorGreen}
-          alt="vector green"
-          className="absolute left-0"
-        />
+        <div>
+          {/* mobile */}
+          <div className="lg:hidden">
+            <Image
+              src={imageVectorOrangeMobile}
+              alt="vector orange"
+              className="absolute left-0 top-72 w-full"
+            />
+          </div>
+          {/* desktop */}
+          <div className="hidden lg:block">
+            <Image
+              src={imageVectorOrangeDesktop}
+              alt="vector orange"
+              className="absolute right-0"
+            />
+            <Image
+              src={imageVectorGreenDesktop}
+              alt="vector green"
+              className="absolute left-0"
+            />
+          </div>
+        </div>
         {/* texts */}
         <div className="relative z-10 w-full space-y-5 sm:max-w-xl md:max-w-2xl lg:max-w-[713px]">
           {/* title */}
@@ -71,7 +85,7 @@ export default function HeroSection() {
           </div>
         </div>
         {/* images */}
-        <div className="w-full">
+        <div className="w-full mt-20">
           {/* mobile */}
           <div className="lg:hidden">
             <Swiper
@@ -130,14 +144,14 @@ export default function HeroSection() {
               alt="سخنرانان همایش"
               width={360}
               height={240}
-              className="absolute bottom-0 top-80 left-36"
+              className="absolute bottom-0 left-36 top-80"
             />
             <Image
               src={imageSpeakerFive}
               alt="سخنرانان همایش"
               width={360}
               height={240}
-              className="absolute top-80 right-28"
+              className="absolute right-28 top-80"
             />
           </div>
         </div>
