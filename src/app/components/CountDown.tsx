@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
 export default function CountDown() {
-  // countdown time left 
+  // countdown time left
   type TTimeLeft = {
     days: number;
     hours: number;
@@ -45,48 +45,50 @@ export default function CountDown() {
   }, [calculateTimeLeftHandler]);
 
   return (
-    <section className="relative">
-      <div className="container flex flex-col items-center">
-        {/* title, sub-title */}
-        <div className="mt-2 space-y-1 text-center">
-          <p className="text-2xl font-bold">ساعت‌ها رو دوباره کوک کردیم</p>
-          <p className="text-2xl text-zinc-400">اینجا ثانیه‌ها ارزشمنداند</p>
-        </div>
-        {/* countdown timer */}
-        <div className="mt-5">
-          <div className="flex gap-4">
-            <div className="text-center">
-              <p className="text-3xl text-green-500">
-                {timeLeft.days.toLocaleString('fa-IR')}
-              </p>
-              <p className="text-zinc-500">روز</p>
-            </div>
-            <span className="text-[48px] font-semibold text-zinc-500">:</span>
-            <div className="text-center">
-              <p className="text-3xl text-green-500">
-                {timeLeft.hours.toLocaleString('fa-IR')}
-              </p>
-              <p className="text-zinc-500">ساعت</p>
-            </div>
-            <span className="text-[48px] font-semibold text-zinc-500">:</span>
-            <div className="text-center">
-              <p className="text-3xl text-green-500">
-                {timeLeft.minutes.toLocaleString('fa-IR')}
-              </p>
-              <p className="text-zinc-500">دقیقه</p>
-            </div>
-            <span className="text-[48px] font-semibold text-zinc-500">:</span>
-            <div className="text-center">
-              <p className="text-3xl text-green-500">
-                {timeLeft.seconds.toLocaleString('fa-IR')}
-              </p>
-              <p className="text-zinc-500">ثانیه</p>
-            </div>
-          </div>
-        </div>
-        {/* text */}
-        <p className='text-zinc-400 text-lg'>تا شروع دومین همایش فرانت چپتر</p>
+    <section className="relative flex flex-col items-center lg:pt-10 bg-[url('../assets/images/home/count-down-vector.svg')] bg-cover bg-top bg-no-repeat">
+      {/* title, sub-title */}
+      <div className="mt-2 text-center lg:space-y-3">
+        <p className="text-2xl font-bold lg:text-4xl">
+          ساعت‌ها رو دوباره کوک کردیم
+        </p>
+        <p className="text-2xl text-zinc-400 lg:text-4xl">
+          اینجا ثانیه‌ها ارزشمنداند
+        </p>
       </div>
+      {/* countdown timer */}
+      <div className="mb-1 mt-4 flex w-full justify-center gap-4 lg:mb-4 lg:mt-8 lg:gap-8">
+        <div className="text-center">
+          <p className="text-3xl text-green-500 lg:text-5xl">
+            {timeLeft.days.toLocaleString('fa-IR')}
+          </p>
+          <p className="text-zinc-500 lg:text-xl">روز</p>
+        </div>
+        <span className="text-5xl font-semibold text-zinc-500">:</span>
+        <div className="text-center">
+          <p className="text-3xl text-green-500 lg:text-5xl">
+            {timeLeft.hours.toLocaleString('fa-IR')}
+          </p>
+          <p className="text-zinc-500 lg:text-xl">ساعت</p>
+        </div>
+        <span className="text-5xl font-semibold text-zinc-500">:</span>
+        <div className="text-center">
+          <p className="text-3xl text-green-500 lg:text-5xl">
+            {timeLeft.minutes.toLocaleString('fa-IR')}
+          </p>
+          <p className="text-zinc-500 lg:text-xl">دقیقه</p>
+        </div>
+        <span className="text-5xl font-semibold text-zinc-500">:</span>
+        <div className="text-center">
+          <p className="text-3xl text-green-500 lg:text-5xl">
+            {timeLeft.seconds.toLocaleString('fa-IR')}
+          </p>
+          <p className="text-zinc-500 lg:text-xl">ثانیه</p>
+        </div>
+      </div>
+      {/* text */}
+      <p className="text-lg text-zinc-400 lg:text-xl">
+        تا شروع دومین همایش فرانت چپتر
+      </p>
     </section>
   );
 }
