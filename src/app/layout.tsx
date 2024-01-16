@@ -1,6 +1,9 @@
-import type { Metadata } from 'next';
-import Providers from './providers';
 import LocalFont from 'next/font/local';
+
+import Providers from './providers';
+
+import type { Metadata } from 'next';
+
 import '@/styles/globals.css';
 
 const fontDana = LocalFont({
