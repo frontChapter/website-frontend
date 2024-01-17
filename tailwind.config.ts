@@ -9,8 +9,8 @@ const config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '0.5rem',
-        sm: '1rem',
+        DEFAULT: '1rem',
+        lg: '5rem',
       },
       screens: {
         '2xl': '1400px',
