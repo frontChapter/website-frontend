@@ -3,14 +3,11 @@
 import Image from "next/image";
 import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
 import imageVectorGreen from "@/assets/images/home/hero-section-vector-green.svg";
-import imageSpeakerDesktop from "@/assets/images/home/hero-section-speaker-desktop.png";
-import imageSpeakerOneMobile from "@/assets/images/home/hero-section-speaker-1-mobile.png";
-import imageSpeakerTwoMobile from "@/assets/images/home/hero-section-speaker-2-mobile.png";
-import imageSpeakerThreeMobile from "@/assets/images/home/hero-section-speaker-3-mobile.png";
-import imageSpeakerFourMobile from "@/assets/images/home/hero-section-speaker-4-mobile.png";
-import imageSpeakerFiveMobile from "@/assets/images/home/hero-section-speaker-5-mobile.png";
-import "swiper/css";
-import { Swiper, SwiperSlide } from "swiper/react";
+import imageOne from "@/assets/images/home/hero-section-image-1.png";
+import imageTwo from "@/assets/images/home/hero-section-image-2.png";
+import imageThree from "@/assets/images/home/hero-section-image-3.png";
+import imageFour from "@/assets/images/home/hero-section-image-4.png";
+import imageFive from "@/assets/images/home/hero-section-image-5.png";
 
 export default function HeroSection() {
   return (
