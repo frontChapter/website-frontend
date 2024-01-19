@@ -1,8 +1,10 @@
 import HeroSection from "./components/HeroSection";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="py-8 space-y-6">
+    <main>
+      <Navbar />
       <HeroSection />
     </main>
   );

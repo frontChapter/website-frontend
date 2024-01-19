@@ -8,10 +8,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: {
-        DEFAULT: '0.5rem',
-        sm: '1rem',
-      },
+      padding: '1rem',
       screens: {
         '2xl': '1400px',
       },
@@ -35,6 +32,9 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      transitionDuration: {
+        DEFAULT: '250ms',
       },
     },
   },
