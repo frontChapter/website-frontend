@@ -15,75 +15,65 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function HeroSection() {
   return (
     <section className="relative">
+      <Image
+        src={imageVectorOrange}
+        alt="vector orange"
+        className="absolute bottom-0 left-0 max-w-none lg:right-0 lg:top-0"
+      />
+      <Image
+        src={imageVectorGreen}
+        alt="vector green"
+        className="absolute left-0 top-0 hidden lg:block"
+      />
       <div className="container flex flex-col items-center">
-        {/* vectors */}
-        <div>
-          {/* mobile */}
-          <div className="lg:hidden">
-            <Image
-              src={imageVectorOrangeMobile}
-              alt="vector orange"
-              className="absolute left-0 top-[370px] w-full"
-            />
-          </div>
-          {/* desktop */}
-          <div className="hidden lg:block">
-            <Image
-              src={imageVectorOrangeDesktop}
-              alt="vector orange"
-              className="absolute right-0"
-            />
-            <Image
-              src={imageVectorGreenDesktop}
-              alt="vector green"
-              className="absolute left-0"
-            />
-          </div>
-        </div>
-        {/* texts */}
-        <div className="relative z-10 w-full space-y-5 sm:max-w-xl md:max-w-2xl lg:max-w-[713px]">
-          {/* title */}
-          <h1 className="w-full text-3xl font-extrabold leading-[45px] lg:text-5xl lg:leading-[72px]">
-            دومین همایش <span className="text-orange-500">فرانت‌اند</span> ایران{" "}
-            <span className="text-green-500">اسفند ۱۴۰۲</span> در فریدون‌کنار،
-            مازندران
-          </h1>
-          {/* description */}
-          <h2 className="w-full text-lg font-light text-zinc-400 lg:text-2xl lg:leading-9">
-            همایش فرانت چپتر محلی برای گردهمایی و به اشتراک‌گذاری تجربیات
-            برنامه‌نویسان، متخصصین و علاقه‌مندان حوزه فرانت‌اند
-          </h2>
-          {/* detail */}
-          <div className="grid w-full grid-cols-2 md:flex md:gap-10">
-            {[
-              {
-                title: "زمان",
-                description: "۱۰ اسفند ۱۴۰۲",
-              },
-              {
-                title: "سخنرانان",
-                description: "۱۸ نفر",
-              },
-              {
-                title: "شهر",
-                description: "فریدون‌کنار، مازندران",
-              },
-              {
-                title: "مکان",
-                description: "مجتمع تفریحی رجایی",
-              },
-            ].map((item, index) => {
-              return (
-                <div key={index} className="">
-                  <p className="text-sm font-light text-zinc-50">
-                    {item.title}
-                  </p>
-                  <p className="text-orange-500">{item.description}</p>
-                </div>
-              );
-            })}
+        <div className="relative flex justify-center">
+          <div className="flex flex-col space-y-2 lg:w-8/12">
+            <h1 className="text-3xl/snug font-extrabold md:text-5xl/normal">
+              <span>دومین همایش</span>{" "}
+              <span className="text-orange-500">فرانت‌اند</span>{" "}
+              <span>ایران</span>
+              <br />
+              <span className="text-green-500">اسفند ۱۴۰۲</span>{" "}
+              <span>در فریدون‌کنار، مازندران</span>
+            </h1>
+
+            <h2 className="text-lg text-zinc-400 lg:text-2xl/normal">
+              همایش فرانت چپتر محلی برای گردهمایی و به اشتراک‌گذاری تجربیات
+              برنامه‌نویسان، متخصصین و علاقه‌مندان حوزه فرانت‌اند
+            </h2>
+
+            <div className="grid grid-cols-2 gap-3 pt-4 md:flex md:gap-8 md:pt-6">
+              {[
+                {
+                  title: "زمان",
+                  description: "۱۰ اسفند ۱۴۰۲",
+                },
+                {
+                  title: "سخنرانان",
+                  description: "۱۸ نفر",
+                },
+                {
+                  title: "شهر",
+                  description: "فریدون‌کنار، مازندران",
+                },
+                {
+                  title: "مکان",
+                  description: "مجتمع تفریحی رجایی",
+                },
+              ].map((item, index) => {
+                return (
+                  <div key={index} className="">
+                    <p className="text-sm font-light text-zinc-50 md:text-base">
+                      {item.title}
+                    </p>
+                    <p className="text-orange-500">{item.description}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
+
         {/* images */}
         <div className="mt-20 w-full">
           {/* mobile */}
