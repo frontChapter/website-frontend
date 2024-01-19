@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import { RiCouponFill } from 'react-icons/ri';
-import { HiBars3 } from 'react-icons/hi2';
-import logo from '../assets/images/home/logo.svg';
-import { buttonVariants } from '@/components/ui/button';
-import Link from 'next/link';
+import Image from "next/image";
+import { RiCouponFill } from "react-icons/ri";
+import { HiBars3 } from "react-icons/hi2";
+import logo from "../assets/images/home/logo.svg";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="flex flex-row-reverse items-center justify-between gap-4">
       <section className="flex items-center gap-4">
@@ -35,11 +35,11 @@ function Navbar() {
       </ul>
     </nav>
   );
-}
+};
 
 const navbarLinks = [
-  { title: 'سخنرانان همایش', href: '#?' },
-  { title: 'برنامه همایش', href: '#?' },
+  { title: "سخنرانان همایش", href: "#?" },
+  { title: "برنامه همایش", href: "#?" },
 ];
 
 export default Navbar;
