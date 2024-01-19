@@ -26,7 +26,7 @@ const Navbar = () => {
         <Link
           className={`${buttonVariants({
             variant: "primary",
-          })} gap-1 px-2 py-1.5 text-sm lg:gap-2 lg:px-3 lg:py-2 lg:text-base`}
+          })} gap-1 px-2 py-1.5 lg:gap-2 lg:px-3 lg:py-2`}
           href="#?"
         >
           <RiCouponFill className="w-4 lg:w-5" />
