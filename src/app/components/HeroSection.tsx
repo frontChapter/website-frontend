@@ -11,19 +11,19 @@ import imageFive from "@/assets/images/home/hero-section-image-5.png";
 
 export default function HeroSection() {
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden py-6 lg:py-12">
       <Image
         src={imageVectorOrange}
         alt="vector orange"
-        className="absolute bottom-0 left-0 max-w-none lg:right-0 lg:top-0"
+        className="absolute bottom-0 left-0 -z-10 max-w-none lg:right-0 lg:top-0"
       />
       <Image
         src={imageVectorGreen}
         alt="vector green"
-        className="absolute left-0 top-0 hidden lg:block"
+        className="absolute left-0 top-0 -z-10 hidden lg:block"
       />
       <div className="container flex flex-col items-center">
-        <div className="relative flex justify-center">
+        <div className="flex justify-center">
           <div className="flex flex-col space-y-2 lg:w-8/12">
             <h1 className="text-3xl/snug font-extrabold md:text-5xl/normal">
               <span>دومین همایش</span>{" "}
