@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import imageVectorOrangeDesktop from '@/assets/images/home/hero-section-vector-orange-desktop.svg';
-import imageVectorGreenDesktop from '@/assets/images/home/hero-section-vector-green-desktop.svg';
-import imageVectorOrangeMobile from '@/assets/images/home/hero-section-vector-orange-mobile.svg';
-import imageSpeakerDesktop from '@/assets/images/home/hero-section-speaker-desktop.png';
-import imageSpeakerOneMobile from '@/assets/images/home/hero-section-speaker-1-mobile.png';
-import imageSpeakerTwoMobile from '@/assets/images/home/hero-section-speaker-2-mobile.png';
-import imageSpeakerThreeMobile from '@/assets/images/home/hero-section-speaker-3-mobile.png';
-import imageSpeakerFourMobile from '@/assets/images/home/hero-section-speaker-4-mobile.png';
-import imageSpeakerFiveMobile from '@/assets/images/home/hero-section-speaker-5-mobile.png';
-import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from "next/image";
+import imageVectorOrangeDesktop from "@/assets/images/home/hero-section-vector-orange-desktop.svg";
+import imageVectorGreenDesktop from "@/assets/images/home/hero-section-vector-green-desktop.svg";
+import imageVectorOrangeMobile from "@/assets/images/home/hero-section-vector-orange-mobile.svg";
+import imageSpeakerDesktop from "@/assets/images/home/hero-section-speaker-desktop.png";
+import imageSpeakerOneMobile from "@/assets/images/home/hero-section-speaker-1-mobile.png";
+import imageSpeakerTwoMobile from "@/assets/images/home/hero-section-speaker-2-mobile.png";
+import imageSpeakerThreeMobile from "@/assets/images/home/hero-section-speaker-3-mobile.png";
+import imageSpeakerFourMobile from "@/assets/images/home/hero-section-speaker-4-mobile.png";
+import imageSpeakerFiveMobile from "@/assets/images/home/hero-section-speaker-5-mobile.png";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function HeroSection() {
   return (
@@ -45,7 +45,7 @@ export default function HeroSection() {
         <div className="relative z-10 w-full space-y-5 sm:max-w-xl md:max-w-2xl lg:max-w-[713px]">
           {/* title */}
           <h1 className="w-full text-3xl font-extrabold leading-[45px] lg:text-5xl lg:leading-[72px]">
-            دومین همایش <span className="text-orange-500">فرانت‌اند</span> ایران{' '}
+            دومین همایش <span className="text-orange-500">فرانت‌اند</span> ایران{" "}
             <span className="text-green-500">اسفند ۱۴۰۲</span> در فریدون‌کنار،
             مازندران
           </h1>
@@ -58,20 +58,20 @@ export default function HeroSection() {
           <div className="grid w-full grid-cols-2 md:flex md:gap-10">
             {[
               {
-                title: 'زمان',
-                description: '۱۰ اسفند ۱۴۰۲',
+                title: "زمان",
+                description: "۱۰ اسفند ۱۴۰۲",
               },
               {
-                title: 'سخنرانان',
-                description: '۱۸ نفر',
+                title: "سخنرانان",
+                description: "۱۸ نفر",
               },
               {
-                title: 'شهر',
-                description: 'فریدون‌کنار، مازندران',
+                title: "شهر",
+                description: "فریدون‌کنار، مازندران",
               },
               {
-                title: 'مکان',
-                description: 'مجتمع تفریحی رجایی',
+                title: "مکان",
+                description: "مجتمع تفریحی رجایی",
               },
             ].map((item, index) => {
               return (
@@ -118,7 +118,7 @@ export default function HeroSection() {
             </Swiper>
           </div>
           {/* desktop */}
-          <div className="relative lg:flex justify-center hidden">
+          <div className="relative hidden justify-center lg:flex">
             <Image
               src={imageSpeakerDesktop}
               alt="سخنرانان همایش"
