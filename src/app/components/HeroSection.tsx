@@ -14,12 +14,12 @@ export default function HeroSection() {
     <section className="relative overflow-hidden py-6 lg:py-12">
       <Image
         src={imageVectorOrange}
-        alt="vector orange"
+        alt=""
         className="absolute bottom-0 left-0 -z-10 max-w-none lg:right-0 lg:top-0"
       />
       <Image
         src={imageVectorGreen}
-        alt="vector green"
+        alt=""
         className="absolute left-0 top-0 -z-10 hidden lg:block"
       />
       <div className="container flex flex-col items-center">
