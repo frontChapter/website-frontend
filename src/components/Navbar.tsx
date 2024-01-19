@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { RiCouponFill, RiMenuLine } from "react-icons/ri";
 import logo from "../assets/images/home/logo.svg";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/Button";
 import Link from "next/link";
 
 const Navbar = () => {
