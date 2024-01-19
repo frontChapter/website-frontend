@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import imageVectorOrangeDesktop from "@/assets/images/home/hero-section-vector-orange-desktop.svg";
-import imageVectorGreenDesktop from "@/assets/images/home/hero-section-vector-green-desktop.svg";
-import imageVectorOrangeMobile from "@/assets/images/home/hero-section-vector-orange-mobile.svg";
+import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
+import imageVectorGreen from "@/assets/images/home/hero-section-vector-green.svg";
 import imageSpeakerDesktop from "@/assets/images/home/hero-section-speaker-desktop.png";
 import imageSpeakerOneMobile from "@/assets/images/home/hero-section-speaker-1-mobile.png";
 import imageSpeakerTwoMobile from "@/assets/images/home/hero-section-speaker-2-mobile.png";
