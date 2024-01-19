@@ -11,7 +11,9 @@ const Navbar = () => {
         {navbarLinks.map(({ href, title }) => (
           <li key={title}>
             <a
-              className="px-3 py-2 transition-colors hover:text-orange-500"
+              className={`${buttonVariants({
+                variant: "link",
+              })}`}
               href={href}
             >
               {title}
