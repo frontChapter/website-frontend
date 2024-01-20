@@ -16,23 +16,13 @@ import imageAvatarSeven from "@/assets/images/home/speakers-avatar-7.png";
 import imageAvatarEight from "@/assets/images/home/speakers-avatar-8.png";
 import imageAvatarNine from "@/assets/images/home/speakers-avatar-9.png";
 import SpeakerCard from "./SpeakerCard";
-import { StaticImageData } from "next/image";
-import { IconType } from "react-icons";
+import { TSpeakerCard } from "@/types/home/speakerCard.type";
 
 export default function Speakers() {
   const iconSocialClasses =
     "h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500";
 
-  const speakersData: {
-    avatar: StaticImageData;
-    fullName: string;
-    position: string;
-    company: string;
-    socials: {
-      icon: React.ReactElement<IconType>;
-      link: string;
-    }[];
-  }[] = [
+  const speakersData: TSpeakerCard[] = [
     {
       avatar: imageAvatarOne,
       fullName: "حسام موسوی",

@@ -1,17 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import { TSpeakerCard } from "@/types/home/speakerCard.type";
+import Image from "next/image";
 import Link from "next/link";
-import { IconType } from "react-icons";
-
-interface IProps {
-  avatar: StaticImageData;
-  fullName: string;
-  position: string;
-  company: string;
-  socials: {
-    icon: React.ReactElement<IconType>;
-    link: string;
-  }[];
-}
 
 const SpeakerCard = ({
   avatar,
@@ -19,7 +8,7 @@ const SpeakerCard = ({
   position,
   company,
   socials,
-}: IProps) => {
+}: TSpeakerCard) => {
   return (
     <div>
       <Image
