@@ -52,8 +52,8 @@ export default function ConferenceLocation() {
                   })} flex gap-1.5`}
                   href="#"
                 >
-                  <RiExternalLinkLine className="size-4" />
-                  <span className="text-sm font-bold">وبسایت هتل</span>
+                  <RiExternalLinkLine className="size-4 md:size-5" />
+                  <span className="text-sm font-bold md:text-base">وبسایت هتل</span>
                 </Link>
                 <Link
                   className={`${buttonVariants({
@@ -61,8 +61,8 @@ export default function ConferenceLocation() {
                   })} flex gap-1.5`}
                   href="#"
                 >
-                  <RiMap2Line className="size-4" />
-                  <span className="text-sm font-bold">نمایش در نقشه</span>
+                  <RiMap2Line className="size-4 md:size-5" />
+                  <span className="text-sm font-bold md:text-base">نمایش در نقشه</span>
                 </Link>
               </div>
             </div>
