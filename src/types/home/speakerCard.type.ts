@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import { IconType } from "react-icons";
 
 export type TSpeakerCard = {
   avatar: StaticImageData;
@@ -7,7 +6,7 @@ export type TSpeakerCard = {
   position: string;
   company: string;
   socials: {
-    icon: React.ReactElement<IconType>;
+    icon: 'github' | 'instagram' | 'linkedin' | 'website' | 'twitter';
     link: string;
   }[];
 };
