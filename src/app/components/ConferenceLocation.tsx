@@ -22,7 +22,7 @@ export default function ConferenceLocation() {
         {/* body */}
         <div className="flex justify-center">
           <div className="flex max-w-[850px] flex-col gap-y-5 rounded-xl bg-zinc-800 px-4 md:flex-row-reverse md:gap-4">
-            <div className="pt-4 md:pb-4 md:border-r md:pr-4 md:border-zinc-700">
+            <div className="pt-4 md:border-r md:border-zinc-700 md:pb-4 md:pr-4">
               <Image
                 src={imageMobile}
                 alt="محل برگذاری همایش"
@@ -34,9 +34,11 @@ export default function ConferenceLocation() {
                 className="hidden size-64 rounded-xl md:flex"
               />
             </div>
-            <div className="flex flex-1 pb-4 md:pt-4 md:justify-between flex-col items-center gap-y-5 md:items-start">
+            <div className="flex flex-1 flex-col items-center gap-y-5 pb-4 md:items-start md:justify-between md:pt-4">
               <div className="space-y-5">
-                <p className="text-2xl font-extrabold text-center md:text-start md:text-3xl">سالن همایش هتل میزبان</p>
+                <p className="text-center text-2xl font-extrabold md:text-start md:text-3xl">
+                  سالن همایش هتل میزبان
+                </p>
                 <p className="text-center text-zinc-200 md:text-start md:text-lg">
                   هتل میزبان بابلسر به یکی از درجه یک‌ترین هتل‌های خطه مازندران
                   شناخته می‌شود. این هتل 5 ستاره مشرف به دریا و کوه می‌تواند یک
