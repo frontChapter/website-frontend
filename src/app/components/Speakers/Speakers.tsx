@@ -15,14 +15,24 @@ import imageAvatarSix from "@/assets/images/home/speakers-avatar-6.png";
 import imageAvatarSeven from "@/assets/images/home/speakers-avatar-7.png";
 import imageAvatarEight from "@/assets/images/home/speakers-avatar-8.png";
 import imageAvatarNine from "@/assets/images/home/speakers-avatar-9.png";
-import Image from "next/image";
-import Link from "next/link";
+import SpeakerCard from "./SpeakerCard";
+import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export default function Speakers() {
   const iconSocialClasses =
     "h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500";
 
-  const speakersData = [
+  const speakersData: {
+    avatar: StaticImageData;
+    fullName: string;
+    position: string;
+    company: string;
+    socials: {
+      icon: React.ReactElement<IconType>;
+      link: string;
+    }[];
+  }[] = [
     {
       avatar: imageAvatarOne,
       fullName: "حسام موسوی",
@@ -282,7 +292,7 @@ export default function Speakers() {
       <div className="container space-y-16">
         {/* head */}
         <div className="flex flex-col items-center gap-2">
-          <RiMicLine className="h-12 w-12 lg:w-16 lg:h-16 fill-orange-500" />
+          <RiMicLine className="h-12 w-12 fill-orange-500 lg:h-16 lg:w-16" />
           <h3 className="text-2xl font-bold lg:text-3xl">سخنرانان همایش</h3>
         </div>
         {/* body */}
@@ -295,31 +305,7 @@ export default function Speakers() {
                   index === 6 && "lg:w-1/3"
                 }`}
               >
-                <Image
-                  width={128}
-                  height={128}
-                  className="lg:w-[168px]"
-                  src={item.avatar}
-                  alt={item.fullName}
-                />
-                <div className="text-center lg:space-y-0.5">
-                  <p className="mt-2 font-extrabold lg:text-xl">{item.fullName}</p>
-                  <p className="text-sm text-zinc-400 lg:text-base">{item.position}</p>
-                  <p className="text-sm text-zinc-400 lg:text-base">{item.company}</p>
-                </div>
-                <div className="mt-2 flex gap-1 lg:mt-4">
-                  {item.socials.map((item, index) => {
-                    return (
-                      <Link
-                        key={index}
-                        href={item.link}
-                        className="flex h-6 w-6 items-center justify-center rounded-full"
-                      >
-                        {item.icon}
-                      </Link>
-                    );
-                  })}
-                </div>
+                <SpeakerCard {...item} />
               </div>
             );
           })}
