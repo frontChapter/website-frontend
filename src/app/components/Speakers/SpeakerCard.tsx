@@ -15,7 +15,7 @@ const SpeakerCard = (props: TSpeakerCard) => {
       <Image
         width={128}
         height={128}
-        className="lg:w-[168px]"
+        className="lg:size-[168px]"
         src={props.avatar}
         alt={props.fullName}
       />
@@ -30,24 +30,24 @@ const SpeakerCard = (props: TSpeakerCard) => {
             <Link
               key={index}
               href={item.link}
-              className="flex h-6 w-6 items-center justify-center rounded-full"
+              className="flex size-6 items-center justify-center rounded-full"
             >
               {
                 {
                   github: (
-                    <RiGithubLine className="h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
+                    <RiGithubLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
                   ),
                   twitter: (
-                    <RiTwitterXLine className="h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
+                    <RiTwitterXLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
                   ),
                   linkedin: (
-                    <RiLinkedinLine className="h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
+                    <RiLinkedinLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
                   ),
                   instagram: (
-                    <RiInstagramLine className="h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
+                    <RiInstagramLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
                   ),
                   website: (
-                    <RiGlobalLine className="h-5 w-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
+                    <RiGlobalLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
                   ),
                 }[item.icon]
               }

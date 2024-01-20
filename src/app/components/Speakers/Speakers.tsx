@@ -9,7 +9,7 @@ export default function Speakers() {
       <div className="container space-y-16">
         {/* head */}
         <div className="flex flex-col items-center gap-2">
-          <RiMicLine className="h-12 w-12 fill-orange-500 lg:h-16 lg:w-16" />
+          <RiMicLine className="size-12 fill-orange-500 lg:size-16" />
           <h3 className="text-2xl font-bold lg:text-3xl">سخنرانان همایش</h3>
         </div>
         {/* body */}
