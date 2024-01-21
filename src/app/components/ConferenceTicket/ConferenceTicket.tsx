@@ -38,24 +38,24 @@ export default function ConferenceLocation() {
             price={"تماس بگیرید"}
             advantages={[
               {
-                text: "تست",
+                text: "حضور در ارائه‌ها",
                 makerColor: "green",
               },
               {
-                text: "تست",
+                text: "حضور در پنل گفت‌وگو",
+                makerColor: "green",
+              },
+              {
+                text: "نهار و پذیرایی (روز همایش)",
+                makerColor: "green",
+              },
+              {
+                text: "بسته ویژه شرکت کنندگان",
+                makerColor: "green",
+              },
+              {
+                text: "تخفیف ویژه ثبت نام گروهی",
                 makerColor: "orange",
-              },
-              {
-                text: "تست",
-                makerColor: "green",
-              },
-              {
-                text: "تست",
-                makerColor: "orange",
-              },
-              {
-                text: "تست",
-                makerColor: "green",
               },
             ]}
           />
@@ -67,36 +67,32 @@ export default function ConferenceLocation() {
             price={"۱,۴۹۵,۰۰۰ تومان"}
             advantages={[
               {
-                text: "تست",
+                text: "حضور در ارائه‌ها",
                 makerColor: "green",
               },
               {
-                text: "تست",
+                text: "حضور در پنل گفت‌وگو",
+                makerColor: "green",
+              },
+              {
+                text: "نهار و پذیرایی (روز همایش)",
+                makerColor: "green",
+              },
+              {
+                text: "بسته ویژه شرکت کنندگان",
+                makerColor: "green",
+              },
+              {
+                text: "حضور در قسمت VIP سالن",
                 makerColor: "orange",
               },
               {
-                text: "تست",
-                makerColor: "green",
-              },
-              {
-                text: "تست",
-                makerColor: "green",
-              },
-              {
-                text: "تست",
+                text: "حضور در برنامه‌های ویژه",
                 makerColor: "orange",
               },
               {
-                text: "تست",
-                makerColor: "green",
-              },
-              {
-                text: "تست",
+                text: "عضویت در کلاب هویج طلایی (بعد از همایش)",
                 makerColor: "orange",
-              },
-              {
-                text: "تست",
-                makerColor: "green",
               },
             ]}
           />
@@ -108,23 +104,19 @@ export default function ConferenceLocation() {
             price={"۷۷۵,۰۰۰ تومان"}
             advantages={[
               {
-                text: "تست",
+                text: "حضور در ارائه‌ها",
                 makerColor: "green",
               },
               {
-                text: "تست",
-                makerColor: "orange",
-              },
-              {
-                text: "تست",
+                text: "حضور در پنل گفت‌وگو",
                 makerColor: "green",
               },
               {
-                text: "تست",
+                text: "نهار و پذیرایی (روز همایش)",
                 makerColor: "green",
               },
               {
-                text: "تست",
+                text: "بسته ویژه شرکت کنندگان",
                 makerColor: "green",
               },
             ]}
@@ -137,23 +129,19 @@ export default function ConferenceLocation() {
             price={"تمام شده"}
             advantages={[
               {
-                text: "تست",
+                text: "حضور در ارائه‌ها",
                 makerColor: "green",
               },
               {
-                text: "تست",
-                makerColor: "orange",
-              },
-              {
-                text: "تست",
+                text: "حضور در پنل گفت‌وگو",
                 makerColor: "green",
               },
               {
-                text: "تست",
+                text: "نهار و پذیرایی (روز همایش)",
                 makerColor: "green",
               },
               {
-                text: "تست",
+                text: "بسته ویژه شرکت کنندگان",
                 makerColor: "green",
               },
             ]}
