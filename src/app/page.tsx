@@ -1,10 +1,12 @@
 import CountDown from "./components/CountDown";
-import HeroSection from "./components/HeroSection";
+import Hero from "./components/Hero/Hero";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="py-6 space-y-8">
-      <HeroSection />
+    <main>
+      <Navbar />
+      <Hero />
       <CountDown />
     </main>
   );
