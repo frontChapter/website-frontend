@@ -9,21 +9,6 @@ import { Fragment, useEffect, useState } from "react";
 import { HiOutlineClock } from "react-icons/hi";
 
 export default function CountDown() {
-  const [now, setNow] = useState(Date.now());
-  const duration = moment.duration(
-    Math.max(moment(conferenceDateTime).diff(now), 0),
-  );
-
-  /**
-   * Update the current time every second
-   */
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setNow(Date.now());
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="relative flex flex-col items-center py-14 lg:py-20">
       <Image
@@ -42,44 +27,65 @@ export default function CountDown() {
         <strong className="font-bold">ساعت‌ها رو دوباره کوک کردیم</strong>
         <span className="text-zinc-400">اینجا ثانیه‌ها ارزشمندند</span>
       </div>
-      <div className="mt-7 flex gap-3 lg:mt-8 lg:gap-6">
-        {[
-          {
-            label: "ثانیه",
-            value: duration.seconds(),
-          },
-          {
-            label: "دقیقه",
-            value: duration.minutes(),
-          },
-          {
-            label: "ساعت",
-            value: duration.hours(),
-          },
-          {
-            label: "روز",
-            value: Math.trunc(duration.asDays()),
-          },
-        ].map(({ label, value }) => (
-          <Fragment key={label}>
-            <div className="flex w-12 flex-col text-center lg:w-24" key={label}>
-              <span
-                className="text-3xl/snug text-green-500 lg:text-5xl/snug"
-                suppressHydrationWarning
-              >
-                {value.toLocaleString("fa-IR")}
-              </span>
-              <span className="text-zinc-500 lg:text-xl">{label}</span>
-            </div>
-            <span className="text-3xl/snug font-semibold text-zinc-500 last:hidden lg:text-5xl/snug">
-              :
-            </span>
-          </Fragment>
-        ))}
-      </div>
+      <CountDownTimer />
       <p className="text-xl text-zinc-400 lg:mt-8 lg:text-3xl/snug">
         تا شروع دومین همایش فرانت چپتر
       </p>
     </section>
   );
 }
+
+const CountDownTimer = () => {
+  const [now, setNow] = useState(Date.now());
+  const duration = moment.duration(
+    Math.max(moment(conferenceDateTime).diff(now), 0),
+  );
+
+  /**
+   * Update the current time every second
+   */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNow(Date.now());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="mt-7 flex gap-3 lg:mt-8 lg:gap-6">
+      {[
+        {
+          label: "ثانیه",
+          value: duration.seconds(),
+        },
+        {
+          label: "دقیقه",
+          value: duration.minutes(),
+        },
+        {
+          label: "ساعت",
+          value: duration.hours(),
+        },
+        {
+          label: "روز",
+          value: Math.trunc(duration.asDays()),
+        },
+      ].map(({ label, value }) => (
+        <Fragment key={label}>
+          <div className="flex w-12 flex-col text-center lg:w-24" key={label}>
+            <span
+              className="text-3xl/snug text-green-500 lg:text-5xl/snug"
+              suppressHydrationWarning
+            >
+              {value.toLocaleString("fa-IR")}
+            </span>
+            <span className="text-zinc-500 lg:text-xl">{label}</span>
+          </div>
+          <span className="text-3xl/snug font-semibold text-zinc-500 last:hidden lg:text-5xl/snug">
+            :
+          </span>
+        </Fragment>
+      ))}
+    </div>
+  );
+};
