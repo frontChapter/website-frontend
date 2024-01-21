@@ -19,7 +19,7 @@ export const TicketsSection = () => {
       title: "اقامت شب قبل از همایش",
       price: "۲۵۶٬۰۰۰ تومان",
       description:
-        "همه‌ی سخنرانان و شرکت‌کنندگان شب قبل از همایش در هتل میزبان بابلسر پذیرش و اسکان داده می‌شوند.",
+        "اقامت ویژه شب قبل از همایش در کنار دیگر شرکت کنندگان و سخنرانان",
       image: {
         mobile: {
           src: hotelMobileImage,
@@ -33,17 +33,17 @@ export const TicketsSection = () => {
 
       extraContent: (
         <div className="w-full">
-          <div className="mt-2 flex justify-between">
+          <div className="mt-2 flex justify-between items-center">
             <span className=" text-2xl font-semibold text-zinc-300 md:text-start md:text-3xl">
               هتل میزبان بابلسر
             </span>
             <span className="text-xl text-yellow-500 md:hidden">۵ ستاره</span>
             <div className=" hidden md:flex">
-              <RiStarFill className="text-lg text-yellow-500" />
-              <RiStarFill className="text-lg text-yellow-500" />
-              <RiStarFill className="text-lg text-yellow-500" />
-              <RiStarFill className="text-lg text-yellow-500" />
-              <RiStarFill className="text-lg text-yellow-500" />
+              <RiStarFill className="size-6 text-yellow-500" />
+              <RiStarFill className="size-6 text-yellow-500" />
+              <RiStarFill className="size-6 text-yellow-500" />
+              <RiStarFill className="size-6 text-yellow-500" />
+              <RiStarFill className="size-6 text-yellow-500" />
             </div>
           </div>
           <div className="md:flex md:justify-between">
