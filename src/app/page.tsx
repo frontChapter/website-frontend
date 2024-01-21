@@ -1,4 +1,4 @@
-import ConferenceLocation from "./components/ConferenceTicket";
+import ConferenceLocation from "./components/ConferenceTicket/ConferenceTicket";
 import Hero from "./components/Hero/Hero";
 import Navbar from "@/components/Navbar";
 
