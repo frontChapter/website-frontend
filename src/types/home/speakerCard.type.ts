@@ -6,5 +6,5 @@ export type TSpeakerCard = {
   fullName: string;
   position: string;
   company: string;
-  socials: Record<keyof typeof socialIcons, string>;
+  socials: Partial<Record<keyof typeof socialIcons, string>>;
 };
