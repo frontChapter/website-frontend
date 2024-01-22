@@ -17,7 +17,6 @@ export const speakersData: TSpeakerCard[] = [
     company: "بنیان گذار راکت",
     socials: {
       github: "#?",
-      linkedin: "#?",
       instagram: "#?",
       twitter: "#?",
       website: "#?",
@@ -29,8 +28,6 @@ export const speakersData: TSpeakerCard[] = [
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
     socials: {
-      github: "#?",
-      linkedin: "#?",
       instagram: "#?",
       twitter: "#?",
       website: "#?",
@@ -44,7 +41,6 @@ export const speakersData: TSpeakerCard[] = [
     socials: {
       github: "#?",
       linkedin: "#?",
-      instagram: "#?",
       twitter: "#?",
       website: "#?",
     },
@@ -58,7 +54,6 @@ export const speakersData: TSpeakerCard[] = [
       github: "#?",
       linkedin: "#?",
       instagram: "#?",
-      twitter: "#?",
       website: "#?",
     },
   },
@@ -69,7 +64,6 @@ export const speakersData: TSpeakerCard[] = [
     company: "بنیان گذار راکت",
     socials: {
       github: "#?",
-      linkedin: "#?",
       instagram: "#?",
       twitter: "#?",
       website: "#?",
@@ -84,8 +78,6 @@ export const speakersData: TSpeakerCard[] = [
       github: "#?",
       linkedin: "#?",
       instagram: "#?",
-      twitter: "#?",
-      website: "#?",
     },
   },
   {
@@ -95,7 +87,6 @@ export const speakersData: TSpeakerCard[] = [
     company: "بنیان گذار راکت",
     socials: {
       github: "#?",
-      linkedin: "#?",
       instagram: "#?",
       twitter: "#?",
       website: "#?",
@@ -108,8 +99,6 @@ export const speakersData: TSpeakerCard[] = [
     company: "بنیان گذار راکت",
     socials: {
       github: "#?",
-      linkedin: "#?",
-      instagram: "#?",
       twitter: "#?",
       website: "#?",
     },
@@ -121,10 +110,8 @@ export const speakersData: TSpeakerCard[] = [
     company: "بنیان گذار راکت",
     socials: {
       github: "#?",
-      linkedin: "#?",
       instagram: "#?",
       twitter: "#?",
-      website: "#?",
     },
   },
 ];
