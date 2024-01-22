@@ -1,5 +1,4 @@
 import { RiMicLine } from "react-icons/ri";
-import { cn } from "@/utils/styles";
 import { speakersData } from "@/data/speakersData";
 import SpeakerCard from "./SpeakerCard";
 
@@ -14,19 +13,15 @@ export default function Speakers() {
         </div>
 
         {/* body */}
-        <div className="flex w-full flex-wrap justify-center gap-y-6 sm:gap-y-8 lg:gap-y-10">
+        <div className="flex flex-wrap items-center justify-center gap-y-4 md:gap-y-6 lg:gap-y-0">
           {speakersData.map((item, index) => {
             return (
-              <div
-                key={index}
-                className={cn(
-                  `flex w-1/2 flex-col items-center sm:w-1/3 lg:w-1/4 ${
-                    index === 6 && "lg:w-1/3"
-                  }`,
+              <>
+                {[4, 7].includes(index) && (
+                  <div className="hidden h-6 w-full lg:block" />
                 )}
-              >
-                <SpeakerCard {...item} />
-              </div>
+                <SpeakerCard key={index} {...item} />
+              </>
             );
           })}
         </div>
