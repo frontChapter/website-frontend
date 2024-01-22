@@ -3,6 +3,7 @@
 import TweetCard from "./TweetCard";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const Tweets = () => {
@@ -31,23 +32,9 @@ const Tweets = () => {
       </div>
 
       <div className="select-none">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={1}
-          loop={true}
-          breakpoints={{
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
-          }}
-        >
+        <Swiper slidesPerView="auto" autoplay loop modules={[Autoplay]}>
           {new Array(10).fill(0).map((_, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="ms-4 !w-auto xl:ms-6">
               <TweetCard />
             </SwiperSlide>
           ))}

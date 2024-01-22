@@ -5,7 +5,7 @@ import Saleh from "@/assets/images/tweets/saleh.png";
 
 const TweetCard = () => {
   return (
-    <article className="flex w-[17rem] flex-col gap-3 rounded-xl bg-zinc-800 p-4">
+    <article className="flex w-72 flex-col gap-3 rounded-xl bg-zinc-800 p-4">
       <header className="flex justify-between">
         <RiTwitterXFill className="text-2xl text-zinc-400" />
         <div className="flex gap-2">
