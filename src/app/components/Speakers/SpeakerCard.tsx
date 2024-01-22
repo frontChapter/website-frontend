@@ -2,23 +2,29 @@ import { TSpeakerCard } from "@/types/home/speakerCard.type";
 import Image from "next/image";
 import SpeakerSocials from "./SpeakerSocials";
 
-const SpeakerCard = (props: TSpeakerCard) => {
+const SpeakerCard = ({
+  avatar,
+  company,
+  fullName,
+  position,
+  socials,
+}: TSpeakerCard) => {
   return (
-    <div>
+    <div className="flex flex-col items-center gap-2 lg:gap-4">
       <Image
         width={128}
         height={128}
         className="lg:size-[168px]"
-        src={props.avatar}
-        alt={props.fullName}
+        src={avatar}
+        alt={fullName}
       />
-      <div className="text-center lg:space-y-0.5">
-        <p className="mt-2 font-extrabold lg:text-xl">{props.fullName}</p>
-        <p className="text-sm text-zinc-400 lg:text-base">{props.position}</p>
-        <p className="text-sm text-zinc-400 lg:text-base">{props.company}</p>
+      <div className="flex flex-col items-center gap-0.5 lg:gap-1">
+        <strong className="lg:text-xl">{fullName}</strong>
+        <span className="text-sm text-zinc-400 lg:text-base">{position}</span>
+        <span className="text-sm text-zinc-400 lg:text-base">{company}</span>
       </div>
-      <div className="mt-2 flex gap-1 lg:mt-4">
-        <SpeakerSocials {...props.socials} />
+      <div className="flex gap-3 lg:gap-2">
+        <SpeakerSocials {...socials} />
       </div>
     </div>
   );
