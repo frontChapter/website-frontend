@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
 import imageVectorGreen from "@/assets/images/home/hero-section-vector-green.svg";
