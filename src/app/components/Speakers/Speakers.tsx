@@ -1,7 +1,7 @@
-import SpeakerCard from "./SpeakerCard";
-import { cn } from "@/utils/styles";
 import { RiMicLine } from "react-icons/ri";
+import { cn } from "@/utils/styles";
 import { speakersData } from "@/data/speakersData";
+import SpeakerCard from "./SpeakerCard";
 
 export default function Speakers() {
   return (
@@ -18,9 +18,11 @@ export default function Speakers() {
             return (
               <div
                 key={index}
-                className={cn(`flex w-1/2 flex-col items-center sm:w-1/3 lg:w-1/4 ${
-                  index === 6 && "lg:w-1/3"
-                }`)}
+                className={cn(
+                  `flex w-1/2 flex-col items-center sm:w-1/3 lg:w-1/4 ${
+                    index === 6 && "lg:w-1/3"
+                  }`,
+                )}
               >
                 <SpeakerCard {...item} />
               </div>
