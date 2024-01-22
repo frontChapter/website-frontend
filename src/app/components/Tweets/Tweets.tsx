@@ -1,10 +1,5 @@
-"use client";
-
-import TweetCard from "./TweetCard";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import TweetsSlider from "./TweetsSlider";
 
 const Tweets = () => {
   return (
@@ -31,15 +26,7 @@ const Tweets = () => {
         </div>
       </div>
 
-      <div className="select-none">
-        <Swiper slidesPerView="auto" autoplay loop modules={[Autoplay]}>
-          {new Array(10).fill(0).map((_, index) => (
-            <SwiperSlide key={index} className="ms-4 !w-auto xl:ms-6">
-              <TweetCard />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <TweetsSlider />
     </div>
   );
 };
