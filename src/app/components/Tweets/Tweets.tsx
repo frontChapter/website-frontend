@@ -1,89 +1,58 @@
-'use client';
-import TweetCard from './TweetCard';
-// Import React icons
-import { RiTwitterXFill } from 'react-icons/ri';
+"use client";
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {} from 'swiper/core';
-
-// Import Swiper styles
-import 'swiper/css';
+import TweetCard from "./TweetCard";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const Tweets = () => {
   return (
-    <div className="container">
-      <div className="mb-4 flex items-start justify-between text-center lg:mb-8">
-        <h1 className="text-lg font-extrabold lg:text-4xl">
-          درباره<span className="text-orange-500"> فرانت چپتر </span>{' '}
-          <br className="xl:hidden" /> چی میگن؟{' '}
+    <div className="flex flex-col gap-4 py-4 lg:gap-8 lg:py-8">
+      <div className="container flex items-center justify-between">
+        <h1 className="text-xl font-extrabold lg:text-4xl">
+          <span>درباره</span>{" "}
+          <span className="text-orange-500">فرانت چپتر</span>{" "}
+          <br className="md:hidden" />
+          <span>چی میگن؟</span>
         </h1>
-        <div className="flex flex-col  gap-[0.25rem]">
-          <h2 className="inline-flex text-xs font-normal lg:text-base">
-            با این هشتگ <RiTwitterXFill className="mx-1 text-zinc-400" /> بزنید
-            :)
-          </h2>
-          <h3
+        <div className="flex flex-col items-center gap-[0.25rem]">
+          <span className="text-xs font-normal lg:text-base">
+            با این هشتگ توییت بزنید :)
+          </span>
+          <Link
+            dir="ltr"
             className="text-xs font-normal lg:text-base"
-            style={{ direction: 'ltr' }}
+            href="https://twitter.com/hashtag/front_chapter"
+            target="_blank"
           >
-            #front_chapter_1402
-          </h3>
+            #front_chapter
+          </Link>
         </div>
       </div>
 
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        loop={true}
-        breakpoints={{
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        }}
-      >
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TweetCard />
-        </SwiperSlide>
-      </Swiper>
+      <div className="select-none">
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          loop={true}
+          breakpoints={{
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+        >
+          {new Array(10).fill(0).map((_, index) => (
+            <SwiperSlide key={index}>
+              <TweetCard />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
