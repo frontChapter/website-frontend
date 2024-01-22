@@ -15,243 +15,116 @@ export const speakersData: TSpeakerCard[] = [
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarTwo,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarThree,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarFour,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarFive,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarSix,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarSeven,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarEight,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-      {
-        icon: "website",
-        link: "#",
-      },
-      {
-        icon: "twitter",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
   {
     avatar: imageAvatarNine,
     fullName: "حسام موسوی",
     position: "طراح و برنامه نویس",
     company: "بنیان گذار راکت",
-    socials: [
-      {
-        icon: "github",
-        link: "#",
-      },
-      {
-        icon: "instagram",
-        link: "#",
-      },
-      {
-        icon: "linkedin",
-        link: "#",
-      },
-    ],
+    socials: {
+      github: "#?",
+      linkedin: "#?",
+      instagram: "#?",
+      twitter: "#?",
+      website: "#?",
+    },
   },
 ];
