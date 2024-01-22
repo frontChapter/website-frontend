@@ -25,38 +25,30 @@ const SpeakerCard = (props: TSpeakerCard) => {
         <p className="text-sm text-zinc-400 lg:text-base">{props.company}</p>
       </div>
       <div className="mt-2 flex gap-1 lg:mt-4">
-        {props.socials.map((item, index) => {
-          return (
-            <Link
-              key={index}
-              href={item.link}
-              className="flex size-6 items-center justify-center rounded-full"
-            >
-              {
-                {
-                  github: (
-                    <RiGithubLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
-                  ),
-                  twitter: (
-                    <RiTwitterXLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
-                  ),
-                  linkedin: (
-                    <RiLinkedinLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
-                  ),
-                  instagram: (
-                    <RiInstagramLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
-                  ),
-                  website: (
-                    <RiGlobalLine className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
-                  ),
-                }[item.icon]
-              }
-            </Link>
-          );
-        })}
+        <SpeakerSocials {...props.socials} />
       </div>
     </div>
   );
 };
+
+const SpeakerSocials = (socials: TSpeakerCard["socials"]) => {
+  return Object.entries(socials).map(([icon, link]) => {
+    const Icon = socialIcons[icon as keyof typeof socialIcons];
+
+    return (
+      <Link key={icon} href={link} target="_blank">
+        <Icon className="size-5 fill-zinc-400 transition-all duration-200 hover:-translate-y-0.5 hover:fill-orange-500" />
+      </Link>
+    );
+  });
+};
+
+export const socialIcons = {
+  github: RiGithubLine,
+  twitter: RiTwitterXLine,
+  linkedin: RiLinkedinLine,
+  instagram: RiInstagramLine,
+  website: RiGlobalLine,
+} as const;
 
 export default SpeakerCard;
