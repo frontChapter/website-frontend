@@ -1,3 +1,4 @@
+import ConferenceLocation from "./components/ConferenceLocation";
 import CountDown from "./components/CountDown";
 import Hero from "./components/Hero/Hero";
 import Navbar from "@/components/Navbar";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <CountDown />
       <Speakers />
+      <ConferenceLocation />
       <Tweets />
     </main>
   );
