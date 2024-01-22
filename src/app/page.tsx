@@ -10,9 +10,9 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <ConferenceLocation />
       <CountDown />
       <Speakers />
+      <ConferenceLocation />
       <Tweets />
     </main>
   );
