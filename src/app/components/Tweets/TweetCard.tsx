@@ -1,42 +1,40 @@
-import { RiTwitterXFill } from 'react-icons/ri';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { RiTwitterXFill } from "react-icons/ri";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Link from "next/link";
+import Saleh from "@/assets/images/tweets/saleh.png";
 
 const TweetCard = () => {
   return (
-    <div className="flex w-[17rem] flex-col gap-3 rounded-xl bg-zinc-800 p-4">
-      <div className="flex justify-between">
-        <span>
-          <RiTwitterXFill className="text-zinc-400" />{' '}
-        </span>
+    <article className="flex w-[17rem] flex-col gap-3 rounded-xl bg-zinc-800 p-4">
+      <header className="flex justify-between">
+        <RiTwitterXFill className="text-2xl text-zinc-400" />
         <div className="flex gap-2">
-          <div
-            className="flex flex-col items-start justify-end"
-            style={{ direction: 'ltr' }}
-          >
-            <h4 className="text-base font-bold">Saleh Shojaei</h4>
-            <a
-              className="text-sm text-zinc-300"
+          <div className="flex flex-col items-end">
+            <h4 className="font-bold lg:text-lg">Saleh Shojaei</h4>
+            <Link
+              className="text-xs text-zinc-300"
               target="_blank"
               href="https://twitter.com/roxaleh"
             >
               @roxaleh
-            </a>
+            </Link>
           </div>
 
-          {/* Avatar Component shadcn */}
           <Avatar>
-            <AvatarImage src={""} alt="X | twitter avatar" />
+            <AvatarImage src={Saleh.src} alt="X | twitter avatar" />
             <AvatarFallback>avatar</AvatarFallback>
           </Avatar>
         </div>
-      </div>
+      </header>
       <div>
-        <p className="text-right text-sm font-normal text-zinc-300">
+        <p className="whitespace-pre-wrap text-xs text-zinc-300 lg:text-sm">
           رفقا می‌تونید با رزرو زودتر بلیط اقامتگاهتون، راحت‌تر توی همایش شرکت
-          کنید #frontchapter1402
+          کنید.
+          <br />
+          #front_chapter
         </p>
       </div>
-    </div>
+    </article>
   );
 };
 
