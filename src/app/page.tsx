@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "@/components/Navbar";
 import Speakers from "./components/Speakers/Speakers";
 import Tweets from "@/app/components/Tweets/Tweets";
+import AdditionalPlans from "./components/AdditionalPlans";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Speakers />
       <ConferenceLocation />
       <ConferenceTicket />
+      <AdditionalPlans />
       <Tweets />
     </main>
   );
