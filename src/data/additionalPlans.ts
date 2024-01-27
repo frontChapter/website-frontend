@@ -19,7 +19,7 @@ type Route = {
 
 interface Place {
   name: string;
-  rate: {
+  rate?: {
     value: number;
     placeholder: string;
   };
@@ -44,29 +44,25 @@ export const additionalPlans: AdditionalPlan[] = [
   {
     title: "اقامت شب قبل از همایش",
     description:
-      "همه‌ی سخنرانان و شرکت‌کنندگان شب قبل از همایش در هتل میزبان بابلسر پذیرش و اسکان داده می‌شوند.",
+      "اقامت ویژه شب قبل از همایش در کنار دیگر شرکت کنندگان و سخنرانان.",
     image: {
       mobile: {
         src: hotelMobileImage,
-        alt: "تصویر هتل",
+        alt: "تصویر اقامتگاه",
       },
       desktop: {
         src: hotelDesktopImage,
-        alt: "تصویر هتل",
+        alt: "تصویر اقامتگاه",
       },
     },
-    time: "ساعت ۱۹:۳۰ الی ۸:۰۰ روز بعد",
+    time: "شب قبل از همایش تا صبح روز همایش",
     date: "۰۹ اسفند ۱۴۰۲",
     place: {
-      name: "هتل میزبان بابلسر",
-      rate: {
-        value: 5,
-        placeholder: "۵ ستاره",
-      },
+      name: "هتل کیش مهر فریدونکنار",
     },
   },
   {
-    title: "بلیت رفت و برگشت",
+    title: "رفت و برگشت",
     description:
       "رفت و برگشت از تهران به محل اقامت و همچنین بازگشت پس از اتمام همایش به تهران.",
     image: {
