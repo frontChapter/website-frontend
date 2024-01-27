@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/frontChapter/website-frontend/compare/v0.6.1...v0.7.0) (2024-01-27)
+
+
+### Features
+
+* add `<AdditionalPlans>` to index page ([79bc0f3](https://github.com/frontChapter/website-frontend/commit/79bc0f372d036fbbbd1a67e89d150fd27f77b930))
+* add assets ([e81fad0](https://github.com/frontChapter/website-frontend/commit/e81fad012a984dffd62915238e43621f88383714))
+* add head ([9cdbba2](https://github.com/frontChapter/website-frontend/commit/9cdbba23ddcaf66c6fd0a23b4758a7cb80e9fb4c))
+* add header component ([6a0e6a0](https://github.com/frontChapter/website-frontend/commit/6a0e6a09f4387ba98570ea3ae95b5c7863174efb))
+* add ticket card component ([13a1f8a](https://github.com/frontChapter/website-frontend/commit/13a1f8ad81be3d354e070c68f22d6a8047602c9f))
+* add ticket price cards ([840dfb8](https://github.com/frontChapter/website-frontend/commit/840dfb88d8a0c91f8070082534e78da95679088b))
+* add tickets data ([6a34feb](https://github.com/frontChapter/website-frontend/commit/6a34febc02ef56520ea7b1ff28fed59a9276a1c1))
+* render ticket cards in ticket section ([6958aa9](https://github.com/frontChapter/website-frontend/commit/6958aa9559b73755cdb49c6fc5f4338bfdc2a318))
+* update `<ConferenceLocation>` details ([99bdc16](https://github.com/frontChapter/website-frontend/commit/99bdc165213a26195a02bb494d298434710eca1e))
+* update `<ConferenceTicket>` link text ([b25e5f4](https://github.com/frontChapter/website-frontend/commit/b25e5f4468ff531ba6d398b9db5d9e24c07363cd))
+* update `<Navbar>` anchor links ([9e031ec](https://github.com/frontChapter/website-frontend/commit/9e031ec3c690205469110ed429e56aad6cb031fc))
+* update `<Plan>` responsive styles ([97e0715](https://github.com/frontChapter/website-frontend/commit/97e071501926c49a357c7f340ec699eb743a4bce))
+* update `<Plan>` style ([88b37b3](https://github.com/frontChapter/website-frontend/commit/88b37b344139eee7160cdc68416b0b14d45651cb))
+* update additionalPlans data ([8ef29a2](https://github.com/frontChapter/website-frontend/commit/8ef29a2da3e3f2c556e786dcd119c089b72b9259))
+* update additionalPlans gathering description ([a1a41a8](https://github.com/frontChapter/website-frontend/commit/a1a41a8b623f46b397ab40534e119155c1425f4d))
+* update conference location images ([807c48f](https://github.com/frontChapter/website-frontend/commit/807c48f0a1282a6163e0274dd2abd17b491ad9d1))
+* update hotel images ([5850cd3](https://github.com/frontChapter/website-frontend/commit/5850cd327953836daede4f0e50aa76beedea23e6))
+* update ticket url ([10f577a](https://github.com/frontChapter/website-frontend/commit/10f577a17bee89467a3a57cffcbe838f97e5daa2))
+
+
+### Bug Fixes
+
+* `<ConferenceLocation>` map button hover & active states ([7d98ac6](https://github.com/frontChapter/website-frontend/commit/7d98ac6a7f6565f094df7efae3c68b746f629c5f))
+* `<ConferenceLocation>` typo ([3dbb771](https://github.com/frontChapter/website-frontend/commit/3dbb771fd58a131c54dc2723fc6a9446c28b0dd3))
+* `AdditionalPlans/<Header>` buy ticket link ([237482f](https://github.com/frontChapter/website-frontend/commit/237482f84c36ee43c322a039b04b88de664143f7))
+* change tickets order ([6045a2e](https://github.com/frontChapter/website-frontend/commit/6045a2ec14ed8dddbd838a7716c828ef19e4e642))
+* fix advantage texts in ticket plan cards ([8bb4c16](https://github.com/frontChapter/website-frontend/commit/8bb4c163bf6a321964a125914d7fd53ca48ef7a0))
+* fix image quality problem ([4f59500](https://github.com/frontChapter/website-frontend/commit/4f59500200f7174878f7e030e170ee3dc0965e87))
+* remove additional `<Plan>` prices ([f7d63fb](https://github.com/frontChapter/website-frontend/commit/f7d63fb69ec19013f499012ab11d7abeb981d2ad))
+* show hotel name in ticket card ([ead4625](https://github.com/frontChapter/website-frontend/commit/ead4625a30422d424d5bdbd429f03f784de825da))
+* type of `<Speakers>` social ([b4d77a1](https://github.com/frontChapter/website-frontend/commit/b4d77a130c532efdc87353f461412383d65a1b8a))
+
 ### [0.6.1](https://github.com/frontChapter/website-frontend/compare/v0.1.3...v0.6.1) (2024-01-22)
 
 
