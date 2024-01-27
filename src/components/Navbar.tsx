@@ -12,10 +12,10 @@ const Navbar = () => {
         {navbarLinks.map(({ href, title }) => (
           <li key={title}>
             <a
+              href={href}
               className={`${buttonVariants({
                 variant: "link",
               })}`}
-              href={href}
             >
               {title}
             </a>
@@ -45,8 +45,8 @@ const Navbar = () => {
 };
 
 const navbarLinks = [
-  { title: "سخنرانان همایش", href: "#?" },
-  { title: "برنامه همایش", href: "#?" },
+  { title: "سخنرانان همایش", href: "#speakers" },
+  { title: "برنامه همایش", href: "#timeline" },
 ];
 
 export default Navbar;

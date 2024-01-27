@@ -5,7 +5,7 @@ import { Fragment } from "react";
 
 export default function Speakers() {
   return (
-    <section className="py-6 lg:py-12">
+    <section className="py-6 lg:py-12" id="speakers">
       <div className="container flex flex-col items-stretch gap-2 lg:gap-16">
         {/* head */}
         <div className="flex flex-col items-center gap-2">
