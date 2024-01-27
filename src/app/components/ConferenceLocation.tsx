@@ -53,7 +53,7 @@ export default function ConferenceLocation() {
               target="_blank"
               className={`${buttonVariants({
                 variant: "link",
-              })} gap-1 hover:bg-zinc-700 active:bg-zinc-500`}
+              })} gap-1 hover:!bg-zinc-700 active:!bg-zinc-500`}
             >
               <RiMap2Line className="size-4 md:size-5" />
               <strong className="text-sm md:text-base">نمایش در نقشه</strong>
