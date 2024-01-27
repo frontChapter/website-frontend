@@ -17,39 +17,32 @@ type Route = {
   time: string;
 };
 
-export type Ticket = {
+interface Place {
+  name: string;
+  rate: {
+    value: number;
+    placeholder: string;
+  };
+}
+
+interface Transport {
+  origin: Route;
+  destination: Route;
+}
+
+export type AdditionalPlan = {
   title: string;
-  price: string;
   description: string;
   image: { mobile: Image; desktop: Image };
   date?: string;
   time?: string;
-} & (
-  | {
-      type: "PLACE";
-      hotel: {
-        name: string;
-        rate: {
-          value: number;
-          placeholder: string;
-        };
-      };
-    }
-  | {
-      type: "TRANSPORT";
-      origin: Route;
-      destination: Route;
-    }
-  | {
-      type: "MEET";
-    }
-);
+  place?: Place;
+  transport?: Transport;
+};
 
-export const tickets: Ticket[] = [
+export const additionalPlans: AdditionalPlan[] = [
   {
-    type: "PLACE",
     title: "اقامت شب قبل از همایش",
-    price: "۲۵۶٬۰۰۰ تومان",
     description:
       "همه‌ی سخنرانان و شرکت‌کنندگان شب قبل از همایش در هتل میزبان بابلسر پذیرش و اسکان داده می‌شوند.",
     image: {
@@ -64,7 +57,7 @@ export const tickets: Ticket[] = [
     },
     time: "ساعت ۱۹:۳۰ الی ۸:۰۰ روز بعد",
     date: "۰۹ اسفند ۱۴۰۲",
-    hotel: {
+    place: {
       name: "هتل میزبان بابلسر",
       rate: {
         value: 5,
@@ -73,9 +66,7 @@ export const tickets: Ticket[] = [
     },
   },
   {
-    type: "TRANSPORT",
     title: "بلیت رفت و برگشت",
-    price: "۲۵۶٬۰۰۰ تومان",
     description:
       "رفت و برگشت از تهران به محل اقامت و همچنین بازگشت پس از اتمام همایش به تهران.",
     image: {
@@ -88,19 +79,19 @@ export const tickets: Ticket[] = [
         alt: "تصویر هتل",
       },
     },
-    origin: {
-      title: "تهران، ترمینال شرق",
-      time: "ساعت ۱۴:۰۰",
-    },
-    destination: {
-      title: "محل اقامت فرانت جپتر",
-      time: "ساعت ۱۸:۰۰",
+    transport: {
+      origin: {
+        title: "تهران، ترمینال شرق",
+        time: "ساعت ۱۴:۰۰",
+      },
+      destination: {
+        title: "محل اقامت فرانت جپتر",
+        time: "ساعت ۱۸:۰۰",
+      },
     },
   },
   {
-    type: "MEET",
     title: "دورهمی فرانت چپتر",
-    price: "رایگان",
     description:
       "شب قبل از همایش دور هم جمع می‌شیم و از شبکه سازی کنار آتیش و موسیقی لذت می‌بریم.",
     image: {

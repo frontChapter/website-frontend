@@ -1,5 +1,5 @@
 // ** data
-import { tickets } from "@/data/tickets";
+import { additionalPlans } from "@/data/additionalPlans";
 
 // ** locals
 import Plan from "./Plan";
@@ -11,8 +11,8 @@ const AdditionalPlans = () => {
       <Header />
       <>
         <div className="m-auto flex flex-col gap-6">
-          {tickets.map((ticket, index) => (
-            <Plan ticket={ticket} key={ticket.title + index} />
+          {additionalPlans.map((plan, index) => (
+            <Plan {...plan} key={index} />
           ))}
         </div>
       </>
