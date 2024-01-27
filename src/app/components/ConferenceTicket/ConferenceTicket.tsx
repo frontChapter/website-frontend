@@ -29,13 +29,13 @@ export default function ConferenceLocation() {
           </Link>
         </div>
         {/* body */}
-        <div className="grid items-center gap-4 sm:grid-cols-2 lg:grid-flow-col-dense lg:grid-cols-4">
+        <div className="grid items-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <TicketPlanCard
             title={{
-              text: "ثبت نام گروهی",
-              icon: <RiGroupLine className="size-9 fill-zinc-200" />,
+              text: "ثبت نام عادی",
+              icon: <RiSparklingLine className="size-9 fill-zinc-200" />,
             }}
-            price={"تماس بگیرید"}
+            price={"۷۷۵,۰۰۰ تومان"}
             advantages={[
               {
                 text: "حضور در ارائه‌ها",
@@ -52,10 +52,6 @@ export default function ConferenceLocation() {
               {
                 text: "بسته ویژه شرکت کنندگان",
                 makerColor: "green",
-              },
-              {
-                text: "تخفیف ویژه ثبت نام گروهی",
-                makerColor: "orange",
               },
             ]}
           />
@@ -98,10 +94,10 @@ export default function ConferenceLocation() {
           />
           <TicketPlanCard
             title={{
-              text: "ثبت نام عادی",
-              icon: <RiSparklingLine className="size-9 fill-zinc-200" />,
+              text: "ثبت نام گروهی",
+              icon: <RiGroupLine className="size-9 fill-zinc-200" />,
             }}
-            price={"۷۷۵,۰۰۰ تومان"}
+            price={"تماس بگیرید"}
             advantages={[
               {
                 text: "حضور در ارائه‌ها",
@@ -118,6 +114,10 @@ export default function ConferenceLocation() {
               {
                 text: "بسته ویژه شرکت کنندگان",
                 makerColor: "green",
+              },
+              {
+                text: "تخفیف ویژه ثبت نام گروهی",
+                makerColor: "orange",
               },
             ]}
           />
