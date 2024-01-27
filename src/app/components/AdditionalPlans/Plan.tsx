@@ -38,7 +38,6 @@ const Plan = ({ ticket }: TicketCardProps) => {
             <p className=" text-2xl font-bold md:text-start md:text-3xl">
               {ticket.title}
             </p>
-            <p className="text-2xl font-bold text-green-500">{ticket.price}</p>
           </div>
           <p className=" text-lg leading-7 text-zinc-200 md:text-start md:text-xl">
             {ticket.description}
