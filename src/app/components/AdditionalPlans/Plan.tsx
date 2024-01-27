@@ -14,7 +14,7 @@ import { Ticket } from "@/data/tickets";
 interface TicketCardProps {
   ticket: Ticket;
 }
-export const TicketCard = ({ ticket }: TicketCardProps) => {
+const Plan = ({ ticket }: TicketCardProps) => {
   return (
     <div
       className="mx-4 flex min-h-64
@@ -47,7 +47,9 @@ export const TicketCard = ({ ticket }: TicketCardProps) => {
         {ticket.type === "PLACE" ? (
           <div className="w-full">
             <div className="mt-2 flex justify-between">
-              <span className=" text-2xl font-semibold text-zinc-300 md:text-start md:text-3xl">{ticket.hotel.name}</span>
+              <span className=" text-2xl font-semibold text-zinc-300 md:text-start md:text-3xl">
+                {ticket.hotel.name}
+              </span>
               <span className="text-xl text-yellow-500 md:hidden">۵ ستاره</span>
               <div className=" hidden md:flex">
                 {Array.from({ length: ticket.hotel.rate.value }).map(
@@ -100,3 +102,5 @@ export const TicketCard = ({ ticket }: TicketCardProps) => {
     </div>
   );
 };
+
+export default Plan;

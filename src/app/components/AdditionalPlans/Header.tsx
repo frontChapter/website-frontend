@@ -7,7 +7,7 @@ import ticketsSectionIcon from "@/assets/images/home/tickets-section-icon.png";
 // ** components
 import { Button } from "@/components/ui/Button";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className="flex flex-col items-center  gap-2">
       <Image alt="icon" src={ticketsSectionIcon} className="mb-3 size-16" />
@@ -23,3 +23,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;
