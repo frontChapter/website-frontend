@@ -18,10 +18,10 @@ const buttonVariants = cva(
         default: "bg-slate-900 text-slate-50 hover:bg-slate-900/90",
         destructive: "bg-red-500 text-slate-50 hover:bg-red-500/90",
         outline:
-          "border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900",
+          "border border-slate-200 hover:bg-slate-100 hover:text-slate-700",
         primary: "bg-orange-500 hover:bg-orange-600 active:bg-orange-700",
         secondary: "bg-slate-100 text-slate-900 hover:bg-slate-100/80",
-        ghost: "hover:bg-slate-100 hover:text-slate-900",
+        ghost: "hover:bg-slate-100 hover:text-slate-700",
         link: "hover:bg-zinc-800 active:bg-zinc-700",
       },
       size: {
