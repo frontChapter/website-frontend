@@ -7,16 +7,14 @@ import Header from "./Header";
 
 const AdditionalPlans = () => {
   return (
-    <div className="mt-20 flex flex-col gap-8">
+    <section className="flex flex-col gap-8 py-6 lg:py-12">
       <Header />
-      <>
-        <div className="m-auto flex flex-col gap-6">
-          {additionalPlans.map((plan, index) => (
-            <Plan {...plan} key={index} />
-          ))}
-        </div>
-      </>
-    </div>
+      <div className="m-auto flex flex-col gap-6">
+        {additionalPlans.map((plan, index) => (
+          <Plan {...plan} key={index} />
+        ))}
+      </div>
+    </section>
   );
 };
 
