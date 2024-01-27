@@ -5,7 +5,9 @@ import { RiCouponFill } from "react-icons/ri";
 import ticketsSectionIcon from "@/assets/images/home/tickets-section-icon.png";
 
 // ** components
-import { Button } from "@/components/ui/Button";
+import { buttonVariants } from "@/components/ui/Button";
+import Link from "next/link";
+import { env } from "process";
 
 const Header = () => {
   return (
@@ -16,10 +18,16 @@ const Header = () => {
         فرانت چپتر فقط یه همایش نیست،
         <br /> هدف ما مسافرته
       </p>
-      <Button variant={"primary"} className=" mt-4 flex gap-2">
+      <Link
+        target="_blank"
+        href={env.TICKET_URL ?? "#?"}
+        className={`${buttonVariants({
+          variant: "primary",
+        })} mt-4 gap-2 px-2 py-1.5 lg:mt-6 lg:gap-2 lg:px-3 lg:py-2`}
+      >
         <RiCouponFill className="size-5" />
-        <span className="text-sm ">ورود و خرید بلیت</span>
-      </Button>
+        <strong>خرید بلیت</strong>
+      </Link>
     </div>
   );
 };
