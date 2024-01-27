@@ -20,7 +20,7 @@ const TicketPlanCard = (props: IProps) => {
   return (
     <div
       className={cn(
-        `flex h-fit w-full flex-col gap-4 rounded-xl border-2 border-zinc-700 py-4 ${
+        `flex h-fit w-full flex-col gap-4 rounded-xl border-2 border-zinc-700 py-4 lg:min-h-96 ${
           isVip && "border-orange-500"
         }`,
       )}
@@ -31,9 +31,7 @@ const TicketPlanCard = (props: IProps) => {
         <p className="text-2xl">{props.title.text}</p>
       </div>
       {/* price */}
-      <div
-        className={cn(`bg-zinc-500/30 py-6 ${isVip && "bg-orange-500/30"}`)}
-      >
+      <div className={cn(`bg-zinc-500/30 py-6 ${isVip && "bg-orange-500/30"}`)}>
         <p
           className={cn(
             `text-center text-3xl font-bold ${isVip && "text-orange-500"} ${
