@@ -9,6 +9,7 @@ import {
 
 // ** data
 import { AdditionalPlan } from "@/data/additionalPlans";
+import { cn } from "@/utils/styles";
 
 const Plan = ({
   image,
@@ -20,8 +21,8 @@ const Plan = ({
   transport,
 }: AdditionalPlan) => {
   return (
-    <div className="mx-4 flex min-h-64 max-w-md flex-col gap-y-5 rounded-xl border-2 border-zinc-700 bg-zinc-800 md:max-w-[850px] md:flex-row-reverse md:gap-4">
-      <div className="flex shrink-0 items-center p-4 md:w-1/3 md:border-r md:border-zinc-700 md:p-6">
+    <div className="mx-4 flex min-h-64 max-w-md flex-col rounded-xl border-2 border-zinc-700 bg-zinc-800 md:max-w-[850px] md:flex-row-reverse">
+      <div className="flex shrink-0 items-center p-4 pb-0 md:w-1/3 md:border-r md:border-zinc-700 md:p-6">
         <Image
           src={image.desktop.src}
           alt={image.desktop.alt}
@@ -34,20 +35,22 @@ const Plan = ({
         />
       </div>
       <div className="flex grow flex-col gap-y-5 p-4 md:items-start md:justify-between md:p-6">
-        <div className="flex flex-col gap-3">
-          <div className="md:flex md:justify-between">
-            <p className="text-2xl font-bold md:text-3xl">{title}</p>
-          </div>
-          <p className="text-lg leading-7 text-zinc-200 md:text-xl">
+        <div
+          className={cn("flex flex-col gap-3", {
+            "md:gap-6": !place && !transport,
+          })}
+        >
+          <h3 className="text-2xl font-bold md:text-3xl">{title}</h3>
+          <p className="whitespace-pre-wrap text-lg text-zinc-200 md:text-xl">
             {description}
           </p>
         </div>
         {place && (
           <div className="flex w-full flex-col gap-4">
             <div className="mt-2 flex justify-between">
-              <div className="flex items-center gap-2 text-2xl font-semibold text-zinc-300 md:text-start">
-                <RiHotelLine />
-                <span>{place.name}</span>
+              <div className="flex items-center gap-2 font-semibold text-zinc-300 md:text-start">
+                <RiHotelLine className="text-xl" />
+                <span className="text-2xl">{place.name}</span>
               </div>
             </div>
             <div className="flex flex-col gap-3 text-lg md:flex-row md:justify-between lg:items-center">
