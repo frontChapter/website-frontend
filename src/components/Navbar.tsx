@@ -3,6 +3,7 @@ import { RiCouponFill, RiMenuLine } from "react-icons/ri";
 import logo from "../assets/images/home/logo.svg";
 import { buttonVariants } from "@/components/ui/Button";
 import Link from "next/link";
+import { env } from "process";
 
 const Navbar = () => {
   return (
@@ -11,10 +12,10 @@ const Navbar = () => {
         {navbarLinks.map(({ href, title }) => (
           <li key={title}>
             <a
+              href={href}
               className={`${buttonVariants({
                 variant: "link",
               })}`}
-              href={href}
             >
               {title}
             </a>
@@ -26,10 +27,11 @@ const Navbar = () => {
       </a>
       <section className="flex items-center gap-4">
         <Link
+          target="_blank"
+          href={env.TICKET_URL ?? "#?"}
           className={`${buttonVariants({
             variant: "primary",
           })} gap-1 px-2 py-1.5 lg:gap-2 lg:px-3 lg:py-2`}
-          href="#?"
         >
           <RiCouponFill className="size-4 lg:size-5" />
           <strong>ثبت نام در همایش</strong>
@@ -43,8 +45,8 @@ const Navbar = () => {
 };
 
 const navbarLinks = [
-  { title: "سخنرانان همایش", href: "#?" },
-  { title: "برنامه همایش", href: "#?" },
+  { title: "سخنرانان همایش", href: "#speakers" },
+  { title: "برنامه همایش", href: "#timeline" },
 ];
 
 export default Navbar;
