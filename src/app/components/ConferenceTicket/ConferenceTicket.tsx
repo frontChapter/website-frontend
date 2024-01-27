@@ -58,6 +58,7 @@ export default function ConferenceLocation() {
             ]}
           />
           <TicketPlanCard
+            vip
             title={{
               text: "ثبت نام VIP",
               icon: <RiVipDiamondFill className="size-9 fill-orange-200" />,
@@ -124,6 +125,7 @@ export default function ConferenceLocation() {
             ]}
           />
           <TicketPlanCard
+            soldOut
             title={{
               text: "ثبت نام زودهنگام",
               icon: <RiTimeLine className="size-9 fill-zinc-200" />,
