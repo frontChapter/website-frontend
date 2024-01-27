@@ -25,7 +25,7 @@ export default function HeroSection() {
               <span>ایران</span>
               <br />
               <span className="text-green-500">اسفند ۱۴۰۲</span>{" "}
-              <span>در فریدون‌کنار، مازندران</span>
+              <span>در آمل، مازندران</span>
             </h1>
 
             <h2 className="text-lg text-zinc-400 lg:text-2xl/normal">
@@ -45,11 +45,11 @@ export default function HeroSection() {
                 },
                 {
                   title: "شهر",
-                  description: "فریدون‌کنار، مازندران",
+                  description: "آمل، مازندران",
                 },
                 {
                   title: "مکان",
-                  description: "مجتمع تفریحی رجایی",
+                  description: "مجموعه اریکه آریایی",
                 },
               ].map((item, index) => {
                 return (
