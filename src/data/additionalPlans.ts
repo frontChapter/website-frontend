@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 
 // ** assets
-import hotelMobileImage from "@/assets/images/home/tickets-section-hotel-mobile.png";
-import hotelDesktopImage from "@/assets/images/home/tickets-section-hotel-desktop.png";
+import hotelMobileImage from "@/assets/images/home/tickets-section-hotel-mobile.jpg";
+import hotelDesktopImage from "@/assets/images/home/tickets-section-hotel-desktop.jpg";
 import busDesktopImage from "@/assets/images/home/tickets-section-bus-desktop.png";
 import busMobileImage from "@/assets/images/home/tickets-section-bus-mobile.png";
 import meetingDesktopImage from "@/assets/images/home/tickets-section-meeting-desktop.png";
