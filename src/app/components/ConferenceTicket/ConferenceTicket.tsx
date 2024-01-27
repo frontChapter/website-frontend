@@ -27,7 +27,7 @@ export default function ConferenceLocation() {
             })} mt-4 gap-2 px-2 py-1.5 lg:mt-6 lg:gap-2 lg:px-3 lg:py-2`}
           >
             <RiCouponFill className="size-5" />
-            <strong>ورود و خرید بلیت</strong>
+            <strong>خرید بلیت</strong>
           </Link>
         </div>
         {/* body */}
