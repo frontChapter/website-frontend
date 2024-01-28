@@ -1,0 +1,23 @@
+.speakers {
+  @apply relative flex w-1/2 flex-col items-center gap-2 md:w-1/3 lg:w-1/4 lg:gap-4;
+  & img {
+    @apply transition-transform;
+    &:hover {
+      @apply md:scale-110;
+    }
+  }
+  &:nth-child(odd) {
+    &::after {
+      @apply absolute inset-x-1/2 inset-y-1/2 -z-10 h-0 w-0 -translate-y-14 animate-pulse rounded-full;
+      content: "";
+      box-shadow: -3px -3px 40px 60px rgba(248, 118, 32, 0.45);
+    }
+  }
+  &:nth-child(even) {
+    &::after {
+      @apply absolute inset-x-1/2 inset-y-1/2 -z-10 h-0 w-0 -translate-y-14 animate-pulse rounded-full;
+      content: "";
+      box-shadow: -3px -3px 40px 60px rgba(73, 234, 84, 0.25);
+    }
+  }
+}
