@@ -90,7 +90,7 @@ export default function ConferenceLocation() {
                 makerColor: "orange",
               },
               {
-                text: "عضویت در کلاب هویج طلایی (بعد از همایش)",
+                text: "عضویت در کلاب هویج طلایی",
                 makerColor: "orange",
               },
             ]}
