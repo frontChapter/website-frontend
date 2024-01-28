@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.1](https://github.com/frontChapter/website-frontend/compare/v0.7.0...v0.7.1) (2024-01-28)
+
+
+### Features
+
+* add padding to `<AdditionalPlans>` ([5b001bc](https://github.com/frontChapter/website-frontend/commit/5b001bc7543d1d9d03c1ffe8aced972c8e327f65))
+* improve vip ticket advantages ([6b0c4a9](https://github.com/frontChapter/website-frontend/commit/6b0c4a9cc3e2eb8ff481c50b384a5f57ff473048))
+* update `<ConferenceTicket>` styles ([f75bcfd](https://github.com/frontChapter/website-frontend/commit/f75bcfd6f51d9091fee8bb83458c6c95b350da0e))
+
+
+### Bug Fixes
+
+* update conference location & title ([3490b4d](https://github.com/frontChapter/website-frontend/commit/3490b4d4bea21f22c413ca2ae8285a1e90a63ac0))
+
 ## [0.7.0](https://github.com/frontChapter/website-frontend/compare/v0.6.1...v0.7.0) (2024-01-27)
 
 
