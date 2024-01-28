@@ -1,0 +1,36 @@
+.timeline {
+  @apply flex flex-col items-center justify-center;
+}
+
+.items-container {
+  @apply container relative flex h-auto flex-col items-center justify-center gap-4 py-4;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #3f3f46;
+  }
+  & > div {
+    @apply grid w-full grid-cols-2 grid-rows-1 gap-4;
+    &:nth-child(odd) {
+      & > div {
+        grid-area: 1 / 1 / 2 / 2;
+        @apply relative -left-5 flex w-full items-center;
+      }
+    }
+    &:nth-child(even) {
+      & > div {
+        grid-area: 1 / 2 / 2 / 3;
+        @apply relative -right-5 flex w-full flex-row-reverse items-center;
+      }
+    }
+  }
+}
+
+.box {
+  @apply flex w-full items-center rounded px-4 py-3 shadow-[0px_25px_50px_-12px_rgba(17,24,39,0.25)];
+  background: var(--ui-zinc-800, #27272a);
+}
