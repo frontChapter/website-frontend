@@ -26,7 +26,8 @@
     "sharp": "^0.33.2",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.2.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "yet-another-react-lightbox": "^3.16.0"
   },
   "devDependencies": {
     "@types/node": "^20",
