@@ -16,5 +16,6 @@ export default function Home() {
         <ConferenceLocation />
         <Tweets />
       </main>
+    </>
   );
 }
