@@ -1,6 +1,26 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [1.1.0](https://github.com/frontChapter/website-frontend/compare/v1.0.2...v1.1.0) (2024-01-30)
+
+
+### Features
+
+* update speakersData ([544abf2](https://github.com/frontChapter/website-frontend/commit/544abf2508f355033025d6bef2a0eab1485c48dd))
+
+
+### Bug Fixes
+
+* set dynamic speakers count in `<Hero>` ([906f224](https://github.com/frontChapter/website-frontend/commit/906f224123374c593c346362b5232314169e79ba))
+* speakers wave ([649f82e](https://github.com/frontChapter/website-frontend/commit/649f82e8c73dd666ce0dcd145a7830fe459c7910))
+
+### [1.0.2](https://github.com/frontChapter/website-frontend/compare/v1.0.1...v1.0.2) (2024-01-30)
+
+
+### Bug Fixes
+
+* hide `<Tweets>` ([abd9865](https://github.com/frontChapter/website-frontend/commit/abd98654a63b6e3e5b5c07aecac0afea6991b60c))
 
 ### [1.0.1](https://github.com/frontChapter/website-frontend/compare/v0.8.2...v1.0.1) (2024-01-30)
 

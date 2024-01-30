@@ -1,13 +1,14 @@
 {
   "name": "website-frontend",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "packageManager": "pnpm@8.14.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
@@ -35,13 +36,13 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "commit-and-tag-version": "^12.2.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "postcss-nesting": "^12.0.2",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
-    "standard-version": "^9.5.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
