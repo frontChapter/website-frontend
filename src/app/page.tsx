@@ -7,6 +7,7 @@ import ConferenceTicket from "./components/ConferenceTicket/ConferenceTicket";
 import CountDown from "./components/CountDown";
 import Hero from "./components/Hero/Hero";
 import Speakers from "./components/Speakers/Speakers";
+import Timeline from "./components/Timeline";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <CountDown />
       <Speakers />
+      <Timeline />
       <ConferenceLocation />
       <ConferenceTicket />
       <AdditionalPlans />

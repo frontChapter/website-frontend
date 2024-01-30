@@ -1,0 +1,31 @@
+.timeline {
+  @apply flex flex-col items-center justify-center;
+}
+
+.items-container {
+  @apply container relative flex h-auto flex-col items-center justify-center gap-4 py-4;
+  &::before {
+    @apply md:absolute md:left-1/2 md:top-0 md:h-full md:w-0.5 md:bg-[#3f3f46];
+    content: "";
+  }
+  & > div {
+    @apply w-full gap-4 md:grid md:grid-cols-2 md:grid-rows-1;
+    &:nth-child(odd) {
+      & > div {
+        grid-area: 1 / 1 / 2 / 2;
+        @apply relative flex w-full items-center md:-left-5;
+      }
+    }
+    &:nth-child(even) {
+      & > div {
+        grid-area: 1 / 2 / 2 / 3;
+        @apply relative flex w-full flex-row-reverse items-center md:-right-5;
+      }
+    }
+  }
+}
+
+.box {
+  @apply flex w-full items-center rounded px-4 py-3 shadow-[0px_25px_50px_-12px_rgba(17,24,39,0.25)];
+  background: var(--ui-zinc-800, #27272a);
+}
