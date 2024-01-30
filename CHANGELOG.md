@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.2](https://github.com/frontChapter/website-frontend/compare/v0.8.0...v0.8.2) (2024-01-30)
+
+
+### Features
+
+* add lightbox images gallery ([228289c](https://github.com/frontChapter/website-frontend/commit/228289cd47d6242faef6d1433153044434796e07))
+* add previous conf images ([960212e](https://github.com/frontChapter/website-frontend/commit/960212e1c4a70b72165426c25eb2e52ae418bb68))
+* stage images gallery ([4c741af](https://github.com/frontChapter/website-frontend/commit/4c741affecc995bc9be7e43b67edd325c692875d))
+* timeline on desktop ([f6e036e](https://github.com/frontChapter/website-frontend/commit/f6e036e743dac5aab00ca6e34fbce2eaabf873e1))
+
+
+### Bug Fixes
+
+* `<TicketPlanCard>` ticket url ([b480744](https://github.com/frontChapter/website-frontend/commit/b48074426dec2106d1d2ef20ba46d6d804403e01))
+* missed dependency ([e27beca](https://github.com/frontChapter/website-frontend/commit/e27becaaec0808e63a93b3ab954402bd28bde721))
+* vscode tailwind apply ([09c442b](https://github.com/frontChapter/website-frontend/commit/09c442baec5b7cea830e5e496a48586d7039177d))
+
 ### [0.8.1](https://github.com/frontChapter/website-frontend/compare/v0.8.0...v0.8.1) (2024-01-30)
 
 
