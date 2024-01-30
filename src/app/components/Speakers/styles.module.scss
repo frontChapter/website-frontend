@@ -1,0 +1,9 @@
+.speakers {
+  @apply relative flex w-1/2 flex-col items-center gap-2 md:w-1/3 lg:w-1/6 lg:gap-4;
+  & img {
+    @apply transition-all;
+    &:hover {
+      @apply md:scale-110;
+    }
+  }
+}

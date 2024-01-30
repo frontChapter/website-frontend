@@ -1,0 +1,4 @@
+{
+  "tailwindCSS.experimental.classRegex": ["cn\\(([^)]*)\\)"],
+  "scss.lint.unknownAtRules": "ignore"
+}
