@@ -15,7 +15,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarOne,
     fullName: "حسام موسوی",
     position: "مدرس و برنامه‌نویس",
-    company: "بنیان گذار Rooket",
+    company: "بنیان گذار راکت",
     socials: {
       website: "https://roocket.ir/",
       linkedin: "https://linkedin.com/in/hesam-mousavi-305454ab",
@@ -25,7 +25,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarTwo,
     fullName: "سمانه یعقوبی",
     position: "توسعه‌دهنده فرانت‌اند",
-    company: "مسیریاب Neshab",
+    company: "مسیریاب نشان",
     socials: {
       instagram: "https://instagram.com/samaneyhbi",
       github: "https://github.com/SamaneYaghoobi",
@@ -37,7 +37,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarThree,
     fullName: "محمد رضا ایرانمنش",
     position: "توسعه‌دهنده و راهبر تیم",
-    company: "تیم‌لید Divar",
+    company: "تیم‌لید دیوار",
     socials: {
       linkedin: "https://linkedin.com/in/mohammadrezairanmanesh",
     },
@@ -46,7 +46,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarFour,
     fullName: "صدف امینی‌نیا",
     position: "توسعه‌دهنده فرانت‌اند",
-    company: "برنامه نویس در Exbito",
+    company: "برنامه نویس در اکسبیتو",
     socials: {
       github: "https://github.com/sadafamininia99",
       linkedin: "https://linkedin.com/in/sadafamininia",
@@ -56,7 +56,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarFive,
     fullName: "زهرا خانجانی",
     position: "برنامه‌نویس فرانت‌اند",
-    company: "چپتر لید iToll",
+    company: "چپتر لید آیتول",
     socials: {
       linkedin: "https://linkedin.com/in/zahra-khanjani",
     },
@@ -65,7 +65,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarSix,
     fullName: "حسین موسوی",
     position: "مهندس نرم‌افزار",
-    company: "توسعه‌دهنده ارشد در Alibaba",
+    company: "توسعه‌دهنده ارشد در علی‌بابا",
     socials: {
       linkedin: "https://linkedin.com/in/hossein13mousavi",
     },
@@ -74,7 +74,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarSeven,
     fullName: "آرمان علی‌قنبری",
     position: "توسعه‌دهنده فرانت‌اند",
-    company: "توسعه‌دهنده Holoo",
+    company: "در هلو",
     socials: {
       linkedin: "https://linkedin.com/in/arman-alighanbari-5b5090150",
     },
@@ -83,7 +83,7 @@ export const speakersData: TSpeakerCard[] = [
     avatar: imageAvatarEight,
     fullName: "امیر کبیری",
     position: "مهندس ارشد نرم‌افزار",
-    company: "توسعه‌دهنده ارشد در Digikala",
+    company: "توسعه‌دهنده ارشد در دیجیکالا",
     socials: {
       linkedin: "https://linkedin.com/in/amir-kabiri",
     },
@@ -103,7 +103,7 @@ export const speakersData: TSpeakerCard[] = [
     position: "برنامه نویس ارشد",
     company: "توسعه‌دهنده‌ی ارشد در Finestel",
     socials: {
-      linkedin: "https://linkedin.com/in/behniya-azad",
+      linkedin: "https://linkedin.com/in/m-sahebi",
     },
   },
 ];
