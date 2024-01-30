@@ -19,7 +19,7 @@ export default function Speakers() {
           {speakersData.map((item, index) => {
             return (
               <Fragment key={index}>
-                {[4, 7].includes(index) && (
+                {[5, 8].includes(index) && (
                   <div className="hidden h-6 w-full lg:block" />
                 )}
                 <SpeakerCard {...item} />
