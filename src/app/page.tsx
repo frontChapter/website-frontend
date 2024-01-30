@@ -1,4 +1,4 @@
-import Tweets from "@/app/components/Tweets/Tweets";
+// import Tweets from "@/app/components/Tweets/Tweets";
 import Navbar from "@/components/Navbar";
 import "yet-another-react-lightbox/styles.css";
 import AdditionalPlans from "./components/AdditionalPlans";
@@ -20,7 +20,7 @@ export default function Home() {
       <ConferenceLocation />
       <ConferenceTicket />
       <AdditionalPlans />
-      <Tweets />
+      {/* <Tweets /> */}
     </main>
   );
 }
