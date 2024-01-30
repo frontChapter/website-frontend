@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/frontChapter/website-frontend/compare/v0.8.2...v1.0.1) (2024-01-30)
+
+
+### Features
+
+* timeline on desktop ([517b652](https://github.com/frontChapter/website-frontend/commit/517b6528216eaf02ffe49449e78d39762d66b12e))
+
+
+### Bug Fixes
+
+* add NEXT_PUBLIC to ticket env ([8393325](https://github.com/frontChapter/website-frontend/commit/83933256a95a7aaaefd2ac85b073f44e57eee9d4))
+* add speakers graphical lines ([27c42ca](https://github.com/frontChapter/website-frontend/commit/27c42cac24bc40c1fd71862efff6ed5f4df97ad9))
+* NEXT_PUBLIC environments ([96a8202](https://github.com/frontChapter/website-frontend/commit/96a8202ca691d8938867d8703f0c06498b8f0f7e))
+* update favicon ([c0d5e0b](https://github.com/frontChapter/website-frontend/commit/c0d5e0b130c4c7e3fe3de4c4941be200fbdde0ae))
+* vscode tailwind apply ([1c840bb](https://github.com/frontChapter/website-frontend/commit/1c840bbb0311cfa20adf8eb011c8c77f55a21cdf))
+
 ## [1.0.0](https://github.com/frontChapter/website-frontend/compare/v0.8.2...v1.0.0) (2024-01-30)
 
 
