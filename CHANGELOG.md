@@ -1,8 +1,19 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version)
-for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.0.0](https://github.com/frontChapter/website-frontend/compare/v0.8.2...v1.0.0) (2024-01-30)
+
+
+### Features
+
+* timeline on desktop ([517b652](https://github.com/frontChapter/website-frontend/commit/517b6528216eaf02ffe49449e78d39762d66b12e))
+
+
+### Bug Fixes
+
+* add speakers graphical lines ([27c42ca](https://github.com/frontChapter/website-frontend/commit/27c42cac24bc40c1fd71862efff6ed5f4df97ad9))
+* vscode tailwind apply ([1c840bb](https://github.com/frontChapter/website-frontend/commit/1c840bbb0311cfa20adf8eb011c8c77f55a21cdf))
 
 ### [0.8.2](https://github.com/frontChapter/website-frontend/compare/v0.8.0...v0.8.2) (2024-01-30)
 

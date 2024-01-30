@@ -1,6 +1,6 @@
 {
   "name": "website-frontend",
-  "version": "0.8.2",
+  "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@8.14.1",
   "scripts": {
