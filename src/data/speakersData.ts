@@ -1,5 +1,5 @@
-import { TSpeakerCard } from "@/types/home/speakerCard.type";
 import imageAvatarOne from "@/assets/images/home/speakers-avatar-1.png";
+import imageAvatarMahmoud from "@/assets/images/home/speakers-avatar-10.png";
 import imageAvatarTwo from "@/assets/images/home/speakers-avatar-2.png";
 import imageAvatarThree from "@/assets/images/home/speakers-avatar-3.png";
 import imageAvatarFour from "@/assets/images/home/speakers-avatar-4.png";
@@ -8,110 +8,102 @@ import imageAvatarSix from "@/assets/images/home/speakers-avatar-6.png";
 import imageAvatarSeven from "@/assets/images/home/speakers-avatar-7.png";
 import imageAvatarEight from "@/assets/images/home/speakers-avatar-8.png";
 import imageAvatarNine from "@/assets/images/home/speakers-avatar-9.png";
+import { TSpeakerCard } from "@/types/home/speakerCard.type";
 
 export const speakersData: TSpeakerCard[] = [
   {
     avatar: imageAvatarOne,
     fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    position: "مدرس و برنامه‌نویس",
+    company: "بنیان گذار Rooket",
     socials: {
-      github: "#?",
-      instagram: "#?",
-      twitter: "#?",
-      website: "#?",
+      website: "https://roocket.ir/",
+      linkedin: "https://linkedin.com/in/hesam-mousavi-305454ab",
     },
   },
   {
     avatar: imageAvatarTwo,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "سمانه یعقوبی",
+    position: "توسعه‌دهنده فرانت‌اند",
+    company: "مسیریاب Neshab",
     socials: {
-      instagram: "#?",
-      twitter: "#?",
-      website: "#?",
+      instagram: "https://instagram.com/samaneyhbi",
+      github: "https://github.com/SamaneYaghoobi",
+      linkedin: "https://linkedin.com/in/samaneyaghoobi",
+      website: "https://samaane.ir/",
     },
   },
   {
     avatar: imageAvatarThree,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "محمد رضا ایرانمنش",
+    position: "توسعه‌دهنده و راهبر تیم",
+    company: "تیم‌لید Divar",
     socials: {
-      github: "#?",
-      linkedin: "#?",
-      twitter: "#?",
-      website: "#?",
+      linkedin: "https://linkedin.com/in/mohammadrezairanmanesh",
     },
   },
   {
     avatar: imageAvatarFour,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "صدف امینی‌نیا",
+    position: "توسعه‌دهنده فرانت‌اند",
+    company: "برنامه نویس در Exbito",
     socials: {
-      github: "#?",
-      linkedin: "#?",
-      instagram: "#?",
-      website: "#?",
+      github: "https://github.com/sadafamininia99",
+      linkedin: "https://linkedin.com/in/sadafamininia",
     },
   },
   {
     avatar: imageAvatarFive,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "زهرا خانجانی",
+    position: "برنامه‌نویس فرانت‌اند",
+    company: "چپتر لید iToll",
     socials: {
-      github: "#?",
-      instagram: "#?",
-      twitter: "#?",
-      website: "#?",
+      linkedin: "https://linkedin.com/in/zahra-khanjani",
     },
   },
   {
     avatar: imageAvatarSix,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "حسین موسوی",
+    position: "مهندس نرم‌افزار",
+    company: "توسعه‌دهنده ارشد در Alibaba",
     socials: {
-      github: "#?",
-      linkedin: "#?",
-      instagram: "#?",
+      linkedin: "https://linkedin.com/in/hossein13mousavi",
     },
   },
   {
     avatar: imageAvatarSeven,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "آرمان علی‌قنبری",
+    position: "توسعه‌دهنده فرانت‌اند",
+    company: "توسعه‌دهنده Holoo",
     socials: {
-      github: "#?",
-      instagram: "#?",
-      twitter: "#?",
-      website: "#?",
+      linkedin: "https://linkedin.com/in/arman-alighanbari-5b5090150",
     },
   },
   {
     avatar: imageAvatarEight,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "امیر کبیری",
+    position: "مهندس ارشد نرم‌افزار",
+    company: "توسعه‌دهنده ارشد در Digikala",
     socials: {
-      github: "#?",
-      twitter: "#?",
-      website: "#?",
+      linkedin: "https://linkedin.com/in/amir-kabiri",
     },
   },
   {
     avatar: imageAvatarNine,
-    fullName: "حسام موسوی",
-    position: "طراح و برنامه نویس",
-    company: "بنیان گذار راکت",
+    fullName: "بهنیا آزاد",
+    position: "برنامه نویس ارشد",
+    company: "مدیر ارشد فنی در Extend",
     socials: {
-      github: "#?",
-      instagram: "#?",
-      twitter: "#?",
+      linkedin: "https://linkedin.com/in/behniya-azad",
+    },
+  },
+  {
+    avatar: imageAvatarMahmoud,
+    fullName: "محمود صاحبی",
+    position: "برنامه نویس ارشد",
+    company: "توسعه‌دهنده‌ی ارشد در Finestel",
+    socials: {
+      linkedin: "https://linkedin.com/in/behniya-azad",
     },
   },
 ];
