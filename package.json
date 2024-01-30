@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
