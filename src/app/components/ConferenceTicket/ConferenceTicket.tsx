@@ -9,6 +9,7 @@ import {
   RiVipDiamondFill,
 } from "react-icons/ri";
 import TicketPlanCard from "./TicketPlanCard";
+import { env } from "process";
 
 export default function ConferenceLocation() {
   return (
@@ -20,7 +21,7 @@ export default function ConferenceLocation() {
           <h3 className="text-2xl font-bold lg:text-3xl">بلیت‌های همایش</h3>
           <Link
             target="_blank"
-            href={NEXT_PUBLIC_TICKET_URL ?? "#?"}
+            href={env.NEXT_PUBLIC_TICKET_URL ?? "#?"}
             className={`${buttonVariants({
               variant: "primary",
             })} mt-4 gap-2 px-2 py-1.5 lg:mt-6 lg:gap-2 lg:px-3 lg:py-2`}
