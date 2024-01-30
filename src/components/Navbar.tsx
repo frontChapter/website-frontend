@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { env } from "process";
 import { RiCouponFill, RiMenuLine } from "react-icons/ri";
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
           <div className="flex items-end gap-4 text-end">
             <Link
               target="_blank"
-              href={NEXT_PUBLIC_TICKET_URL ?? "#?"}
+              href={env.NEXT_PUBLIC_TICKET_URL ?? "#?"}
               className={`${buttonVariants({
                 variant: "primary",
               })} gap-1 px-2 py-1.5 lg:gap-2 lg:px-3 lg:py-2`}
