@@ -1,5 +1,6 @@
 import Tweets from "@/app/components/Tweets/Tweets";
 import Navbar from "@/components/Navbar";
+import "yet-another-react-lightbox/styles.css";
 import AdditionalPlans from "./components/AdditionalPlans";
 import ConferenceLocation from "./components/ConferenceLocation";
 import ConferenceTicket from "./components/ConferenceTicket/ConferenceTicket";
