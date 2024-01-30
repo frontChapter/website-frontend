@@ -33,16 +33,18 @@ const TimelineItem = (props: TimelineItemType) => {
             </div>
           )}
           <div className="flex-1">
-            <span className="block">{props.title}</span>
+            <span className="block text-sm font-normal lg:text-lg">
+              {props.title}
+            </span>
             {props.type === "speaker" && (
               <Link href={props.link} target="_blank" rel="noopener noreferrer">
-                <span className="block text-base font-light text-[#D4D4D8]">
+                <span className="block text-xs font-light text-[#D4D4D8]">
                   {props.speaker}
                 </span>
               </Link>
             )}
           </div>
-          <div className="flex gap-4 text-[#D4D4D8]">
+          <div className="hidden gap-4 text-[#D4D4D8] md:flex">
             <div>
               <div className="text-xs font-light">از</div>
               <div className="text-base font-normal">{props.start}</div>
@@ -52,10 +54,13 @@ const TimelineItem = (props: TimelineItemType) => {
               <div className="text-base font-normal">{props.end}</div>
             </div>
           </div>
+          <div className="flex -rotate-90 gap-4 text-[#D4D4D8] md:hidden">
+            <div className="text-base font-normal">{props.start}</div>
+          </div>
         </div>
-        <div className="h-0.5 w-12" style={{ background: color }}></div>
+        <div className="md:h-0.5 md:w-12" style={{ background: color }}></div>
         <div
-          className="aspect-square h-6 rounded-full border-2 bg-[#18181B]"
+          className="hidden aspect-square h-6 rounded-full border-2 bg-[#18181B] md:block"
           style={{ borderColor: color }}
         ></div>
       </div>
