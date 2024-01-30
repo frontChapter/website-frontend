@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/frontChapter/website-frontend/compare/v1.0.1...v1.0.2) (2024-01-30)
+
+
+### Bug Fixes
+
+* hide `<Tweets>` ([abd9865](https://github.com/frontChapter/website-frontend/commit/abd98654a63b6e3e5b5c07aecac0afea6991b60c))
+
 ### [1.0.1](https://github.com/frontChapter/website-frontend/compare/v0.8.2...v1.0.1) (2024-01-30)
 
 
