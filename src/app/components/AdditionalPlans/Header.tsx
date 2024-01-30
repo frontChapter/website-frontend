@@ -20,7 +20,7 @@ const Header = () => {
       </p>
       <Link
         target="_blank"
-        href={env.TICKET_URL ?? "#?"}
+        href={env.NEXT_PUBLIC_TICKET_URL ?? "#?"}
         className={`${buttonVariants({
           variant: "primary",
         })} mt-4 gap-2 px-2 py-1.5 lg:mt-6 lg:gap-2 lg:px-3 lg:py-2`}

@@ -1,6 +1,5 @@
 import { cn } from "@/utils/styles";
 import Link from "next/link";
-import { env } from "process";
 import { ReactNode } from "react";
 
 interface TicketPlanCardProps {
@@ -20,7 +19,7 @@ interface TicketPlanCardProps {
 const TicketPlanCard = (props: TicketPlanCardProps) => {
   return (
     <Link
-      href={env.TICKET_URL ?? "#?"}
+      href={NEXT_PUBLIC_TICKET_URL ?? "#?"}
       target="_blank"
       className={cn({
         "pointer-events-none": props.soldOut,
