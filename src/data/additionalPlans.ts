@@ -81,7 +81,7 @@ export const additionalPlans: AdditionalPlan[] = [
         time: "ساعت ۱۴:۰۰",
       },
       destination: {
-        title: "محل اقامت فرانت چپتر",
+        title: "محل اقامت",
         time: "ساعت ۱۸:۰۰",
       },
     },
