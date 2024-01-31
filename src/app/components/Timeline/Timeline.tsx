@@ -72,7 +72,7 @@ const Timeline = () => {
   return (
     <section className={clsx(styles["timeline"])} id="timeline">
       <div className="inline-block">
-        <h2 className="rounded-lg border border-solid border-[#3F3F46] px-4 py-3">
+        <h2 className="rounded-lg border border-solid border-[#3F3F46] bg-zinc-900 px-4 py-3">
           برنامه همایش
         </h2>
       </div>

@@ -19,6 +19,7 @@ export const speakersData: TSpeakerCard[] = [
     socials: {
       website: "https://roocket.ir/",
       linkedin: "https://linkedin.com/in/hesam-mousavi-305454ab",
+      instagram: "https://www.instagram.com/roocketir/",
     },
   },
   {
@@ -40,6 +41,8 @@ export const speakersData: TSpeakerCard[] = [
     company: "تیم‌لید دیوار",
     socials: {
       linkedin: "https://linkedin.com/in/mohammadrezairanmanesh",
+      website: "https://imohammadreza.ir/",
+      instagram: "https://www.instagram.com/iranmanesh_mohammadreza/",
     },
   },
   {
@@ -50,6 +53,7 @@ export const speakersData: TSpeakerCard[] = [
     socials: {
       github: "https://github.com/sadafamininia99",
       linkedin: "https://linkedin.com/in/sadafamininia",
+      instagram: "",
     },
   },
   {
@@ -68,6 +72,9 @@ export const speakersData: TSpeakerCard[] = [
     company: "توسعه‌دهنده ارشد در علی‌بابا",
     socials: {
       linkedin: "https://linkedin.com/in/hossein13mousavi",
+      website: "https://www.hmousavi.dev/",
+      github: "https://github.com/hossein13m",
+      twitter: "https://twitter.com/hossein13m",
     },
   },
   {
@@ -77,6 +84,7 @@ export const speakersData: TSpeakerCard[] = [
     company: "در هلو",
     socials: {
       linkedin: "https://linkedin.com/in/arman-alighanbari-5b5090150",
+      github: "https://github.com/arman-ag",
     },
   },
   {
@@ -86,6 +94,8 @@ export const speakersData: TSpeakerCard[] = [
     company: "توسعه‌دهنده ارشد در دیجیکالا",
     socials: {
       linkedin: "https://linkedin.com/in/amir-kabiri",
+      github: "https://github.com/amirkabiri",
+      website: "https://akdev.ir/",
     },
   },
   {
@@ -95,6 +105,7 @@ export const speakersData: TSpeakerCard[] = [
     company: "مدیر ارشد فنی در Extend",
     socials: {
       linkedin: "https://linkedin.com/in/behniya-azad",
+      github: "https://github.com/b3hniya",
     },
   },
   {
@@ -104,6 +115,8 @@ export const speakersData: TSpeakerCard[] = [
     company: "توسعه‌دهنده‌ی ارشد در Finestel",
     socials: {
       linkedin: "https://linkedin.com/in/m-sahebi",
+      website: "https://sahebi.org/",
+      github: "https://github.com/m-sahebi",
     },
   },
 ];

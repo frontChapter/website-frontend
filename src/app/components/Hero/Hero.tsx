@@ -1,8 +1,8 @@
-import Image from "next/image";
-import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
 import imageVectorGreen from "@/assets/images/home/hero-section-vector-green.svg";
-import HeroImages from "./HeroImages";
+import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
 import { speakersData } from "@/data/speakersData";
+import Image from "next/image";
+import HeroImages from "./HeroImages";
 
 export default function HeroSection() {
   return (
