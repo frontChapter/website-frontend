@@ -1,5 +1,6 @@
 // import Tweets from "@/app/components/Tweets/Tweets";
 import Navbar from "@/components/Navbar";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "yet-another-react-lightbox/styles.css";
 import AdditionalPlans from "./components/AdditionalPlans";
 import ConferenceLocation from "./components/ConferenceLocation";
@@ -11,16 +12,19 @@ import Timeline from "./components/Timeline";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <CountDown />
-      <Speakers />
-      <Timeline />
-      <ConferenceLocation />
-      <ConferenceTicket />
-      <AdditionalPlans />
-      {/* <Tweets /> */}
-    </main>
+    <>
+      <main>
+        <Navbar />
+        <Hero />
+        <CountDown />
+        <Speakers />
+        <Timeline />
+        <ConferenceLocation />
+        <ConferenceTicket />
+        <AdditionalPlans />
+        {/* <Tweets /> */}
+      </main>
+      <GoogleAnalytics gaId="G-G0H1X12MC" />
+    </>
   );
 }
