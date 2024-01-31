@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
 
 // ** assets
-import hotelMobileImage from "@/assets/images/home/tickets-section-hotel-mobile.jpg";
-import hotelDesktopImage from "@/assets/images/home/tickets-section-hotel-desktop.jpg";
 import busDesktopImage from "@/assets/images/home/tickets-section-bus-desktop.png";
 import busMobileImage from "@/assets/images/home/tickets-section-bus-mobile.png";
+import hotelDesktopImage from "@/assets/images/home/tickets-section-hotel-desktop.jpg";
+import hotelMobileImage from "@/assets/images/home/tickets-section-hotel-mobile.jpg";
 import meetingDesktopImage from "@/assets/images/home/tickets-section-meeting-desktop.png";
 import meetingMobileImage from "@/assets/images/home/tickets-section-meeting-mobile.png";
 
@@ -81,7 +81,7 @@ export const additionalPlans: AdditionalPlan[] = [
         time: "ساعت ۱۴:۰۰",
       },
       destination: {
-        title: "محل اقامت فرانت جپتر",
+        title: "محل اقامت فرانت چپتر",
         time: "ساعت ۱۸:۰۰",
       },
     },
