@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/components/ui/Button";
 import Link from "next/link";
+import { env } from "process";
 import {
   RiCouponFill,
   RiCouponLine,
@@ -9,7 +10,6 @@ import {
   RiVipDiamondFill,
 } from "react-icons/ri";
 import TicketPlanCard from "./TicketPlanCard";
-import { env } from "process";
 
 export default function ConferenceLocation() {
   return (
@@ -37,7 +37,7 @@ export default function ConferenceLocation() {
               text: "ثبت نام عادی",
               icon: <RiSparklingLine className="size-9 fill-zinc-200" />,
             }}
-            price={"۷۷۵,۰۰۰ تومان"}
+            price={"۸۹۵,۰۰۰ تومان"}
             advantages={[
               {
                 text: "حضور در ارائه‌ها",
@@ -63,7 +63,7 @@ export default function ConferenceLocation() {
               text: "ثبت نام VIP",
               icon: <RiVipDiamondFill className="size-9 fill-orange-200" />,
             }}
-            price={"۱,۴۹۵,۰۰۰ تومان"}
+            price={"۱,۵۹۵,۰۰۰ تومان"}
             advantages={[
               {
                 text: "حضور در ارائه‌ها",
