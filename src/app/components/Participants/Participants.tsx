@@ -4,7 +4,7 @@ import Image from "next/image";
 import imageVectorOrange from "@/assets/images/home/other-participants-vector-orange.svg";
 import avatar from "@/assets/images/home/other-participants-avatar.png";
 
-const OtherParticipants = () => {
+const Participants = () => {
   return (
     <section className="flex flex-col gap-12">
       <section className="my-6">
@@ -39,4 +39,4 @@ const OtherParticipants = () => {
   );
 };
 
-export default OtherParticipants;
+export default Participants;
