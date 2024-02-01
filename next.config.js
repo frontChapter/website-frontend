@@ -1,4 +1,6 @@
-const apiServerUrl = new URL(process.env.API_SERVER_URL || "");
+const apiServerUrl = new URL(
+  process.env.API_SERVER_URL || "https://frontchapter.ir",
+);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
