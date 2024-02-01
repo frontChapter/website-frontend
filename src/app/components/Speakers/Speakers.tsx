@@ -1,11 +1,12 @@
-import { RiMicLine } from "react-icons/ri";
 import { speakersData } from "@/data/speakersData";
-import SpeakerCard from "./SpeakerCard";
 import { Fragment } from "react";
+import { RiMicLine } from "react-icons/ri";
+import SpeakerCard from "./SpeakerCard";
+import styles from "./Speakers.styles.module.scss";
 
 export default function Speakers() {
   return (
-    <section className="py-6 lg:py-12">
+    <section className={styles["speakersSection"]} id="speakers">
       <div className="container flex flex-col items-stretch gap-2 lg:gap-16">
         {/* head */}
         <div className="flex flex-col items-center gap-2">
@@ -18,7 +19,7 @@ export default function Speakers() {
           {speakersData.map((item, index) => {
             return (
               <Fragment key={index}>
-                {[4, 7].includes(index) && (
+                {[5, 8].includes(index) && (
                   <div className="hidden h-6 w-full lg:block" />
                 )}
                 <SpeakerCard {...item} />

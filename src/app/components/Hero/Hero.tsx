@@ -1,6 +1,7 @@
-import Image from "next/image";
-import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
 import imageVectorGreen from "@/assets/images/home/hero-section-vector-green.svg";
+import imageVectorOrange from "@/assets/images/home/hero-section-vector-orange.svg";
+import { speakersData } from "@/data/speakersData";
+import Image from "next/image";
 import HeroImages from "./HeroImages";
 
 export default function HeroSection() {
@@ -25,7 +26,7 @@ export default function HeroSection() {
               <span>ایران</span>
               <br />
               <span className="text-green-500">اسفند ۱۴۰۲</span>{" "}
-              <span>در فریدون‌کنار، مازندران</span>
+              <span>در آمل، مازندران</span>
             </h1>
 
             <h2 className="text-lg text-zinc-400 lg:text-2xl/normal">
@@ -41,15 +42,17 @@ export default function HeroSection() {
                 },
                 {
                   title: "سخنرانان",
-                  description: "۱۸ نفر",
+                  description: `${speakersData.length.toLocaleString(
+                    "fa-IR",
+                  )} نفر`,
                 },
                 {
                   title: "شهر",
-                  description: "فریدون‌کنار، مازندران",
+                  description: "آمل، مازندران",
                 },
                 {
                   title: "مکان",
-                  description: "مجتمع تفریحی رجایی",
+                  description: "مجموعه اریکه آریایی",
                 },
               ].map((item, index) => {
                 return (
