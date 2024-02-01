@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.1](https://github.com/frontChapter/website-frontend/compare/v1.2.0...v1.2.1) (2024-02-01)
+
+
+### Bug Fixes
+
+* next.config.js lint error ([a6caadc](https://github.com/frontChapter/website-frontend/commit/a6caadc1f212b76145da983bfe36d0bb73f7ea12))
+
 ## [1.2.0](https://github.com/frontChapter/website-frontend/compare/v1.1.0...v1.2.0) (2024-02-01)
 
 
