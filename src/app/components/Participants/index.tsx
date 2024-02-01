@@ -1,24 +1,29 @@
 import { RiCouponLine } from "react-icons/ri";
 
 import Image from "next/image";
-import imageVectorOrange from "@/assets/images/home/other-participants-vector-orange.svg";
-import avatar from "@/assets/images/home/other-participants-avatar.png";
+import waveDesktop from "@/assets/images/home/participants-wave-desktop.png";
+import waveMobile from "@/assets/images/home/participants-wave-mobile.png";
 
 const Participants = () => {
   return (
-    <section className="flex flex-col gap-12">
-      <section className="my-6">
-        <Image
-          src={imageVectorOrange}
-          className="absolute right-0 -z-10 h-[59px] w-[215px] lg:h-[200px] lg:w-[720px]"
-          alt=""
-        />
-        <Image
-          src={imageVectorOrange}
-          alt=""
-          className="absolute left-0 -z-10 h-[59px] w-[215px] -scale-x-[1] lg:h-[200px] lg:w-[720px]"
-        />
-        <section className="flex flex-col items-center justify-center gap-2">
+    <section className="relative flex flex-col gap-12 py-16 lg:py-32">
+      <Image
+        src={waveMobile}
+        alt=""
+        className="absolute right-0 -z-10 w-screen md:hidden"
+      />
+      <Image
+        src={waveDesktop}
+        alt=""
+        className="absolute right-0 -z-10 hidden max-w-[50vw] md:block"
+      />
+      <Image
+        src={waveDesktop}
+        alt=""
+        className="absolute left-0 -z-10 hidden max-w-[50vw] -scale-x-100 md:block"
+      />
+      <div className="container">
+        <div className="flex flex-col items-center justify-center gap-4 md:py-6">
           <RiCouponLine className="size-16 text-orange-500" />
           <div>
             <h2 className="text-center text-2xl font-bold text-white lg:text-3xl">
@@ -28,13 +33,13 @@ const Participants = () => {
               براساس بلیت‌های فروخته شده
             </p>
           </div>
-        </section>
-      </section>
-      <section className="container flex w-full flex-wrap items-center justify-center gap-4 lg:gap-6">
-        {Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).map((item) => (
-          <Image src={avatar} alt="" key={item} className="w-12 lg:w-16" />
-        ))}
-      </section>
+        </div>
+        {/* <div className="container flex w-full flex-wrap items-center justify-center gap-4 lg:gap-6">
+          {Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).map((item) => (
+            <Image src={avatar} alt="" key={item} className="w-12 lg:w-16" />
+          ))}
+        </div> */}
+      </div>
     </section>
   );
 };
