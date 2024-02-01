@@ -8,7 +8,7 @@ import CountDown from "./components/CountDown";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "@/components/Navbar";
-import Participants from "./components/Participants";
+import Participants from "./components/Participants/Participants";
 import Speakers from "./components/Speakers/Speakers";
 import Timeline from "./components/Timeline";
 
