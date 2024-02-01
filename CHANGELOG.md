@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.1](https://github.com/frontChapter/website-frontend/compare/v1.2.0...v1.2.1) (2024-02-01)
+
+
+### Bug Fixes
+
+* next.config.js lint error ([a6caadc](https://github.com/frontChapter/website-frontend/commit/a6caadc1f212b76145da983bfe36d0bb73f7ea12))
+
+## [1.2.0](https://github.com/frontChapter/website-frontend/compare/v1.1.0...v1.2.0) (2024-02-01)
+
+
+### Features
+
+* add getParticipantList() ([14683b6](https://github.com/frontChapter/website-frontend/commit/14683b6271faebc2ea489b7c20ff2ff65a39b7eb))
+* add Gravatar & api server to allowed urls for image ([e8b6791](https://github.com/frontChapter/website-frontend/commit/e8b67914cc0ae288080adb9c99dd8857d3bed84a))
+* add other participants component ([bc256df](https://github.com/frontChapter/website-frontend/commit/bc256df5c21ca286c27530d00cd972e835080d9c))
+* add related assets for other participants section ([5db16fe](https://github.com/frontChapter/website-frontend/commit/5db16fe6fdd980496e152705afaee299ea7bd20c))
+* fill `<Participants>` with real data ([fa81dad](https://github.com/frontChapter/website-frontend/commit/fa81dad226ecae3930ac5aaa8ef22d3f47f7f2e2))
+* footer ([e7f13cf](https://github.com/frontChapter/website-frontend/commit/e7f13cfa8062e0386ae7df8caf918a4447b7d263))
+* improve `<Participants>` waves ([f68b186](https://github.com/frontChapter/website-frontend/commit/f68b1864369842a4bf822a7442a829ac4bff201e))
+* use OtherParticipants component in home page ([4a01959](https://github.com/frontChapter/website-frontend/commit/4a01959ef9f18759a784256d30d0ca6d6f0fd43c))
+
+
+### Bug Fixes
+
+* hero speakers count ([b3bb703](https://github.com/frontChapter/website-frontend/commit/b3bb703a6ef55ae4d88bc6384edd304b20b6b6b4))
+* word dectation ([762836c](https://github.com/frontChapter/website-frontend/commit/762836c2adf22877dd651543ce44788140636270))
+* word dectation ([fee4824](https://github.com/frontChapter/website-frontend/commit/fee4824c6d39d2b99d479d7b7310b4a80130b4a8))
+
 ## [1.1.0](https://github.com/frontChapter/website-frontend/compare/v1.0.2...v1.1.0) (2024-01-30)
 
 
