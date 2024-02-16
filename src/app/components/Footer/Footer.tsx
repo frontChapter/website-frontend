@@ -43,13 +43,7 @@ const socialIcons = [
   },
   {
     icon: (
-      <Image
-        src="/icons/stars.svg"
-        alt="stars"
-        width={30}
-        height={30}
-        className=""
-      />
+      <Image src="/icons/stars-zinc.svg" alt="stars" width={30} height={30} />
     ),
     title: "همایش ۱۴۰۰",
     link: "https://conf1400.frontchapter.ir/",
@@ -81,7 +75,7 @@ const Footer = () => {
         <div className="flex justify-center">
           <div className="flex flex-wrap justify-center gap-x-32 gap-y-4 py-8 text-3xl text-zinc-400">
             {socialIcons.map((item) => (
-              <div key={item.link} className="flex gap-3">
+              <div key={item.link} className="flex items-center gap-3">
                 {item.icon}
                 {item.children ? (
                   item.children
