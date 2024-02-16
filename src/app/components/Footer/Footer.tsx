@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SiPhp } from "react-icons/si";
-import { GrSwift } from "react-icons/gr";
-import { IoIosClose, IoLogoGithub } from "react-icons/io";
 import React from "react";
 import { FaFigma, FaInstagram } from "react-icons/fa";
+import { GrSwift } from "react-icons/gr";
+import { IoIosClose, IoLogoGithub } from "react-icons/io";
 import { RiLinkedinLine, RiTelegramLine } from "react-icons/ri";
+import { SiPhp } from "react-icons/si";
 
 const defaultIconSize = 28;
 const socialIcons = [
@@ -42,18 +42,13 @@ const socialIcons = [
     ),
   },
   {
-    icon: <RiTelegramLine />,
-    title: "گروه تلگرام",
-    link: "https://t.me/FrontChapterGroup",
-  },
-  {
     icon: (
       <Image
         src="/icons/stars.svg"
         alt="stars"
         width={30}
         height={30}
-        className="fill-zinc-800"
+        className=""
       />
     ),
     title: "همایش ۱۴۰۰",
@@ -103,12 +98,14 @@ const Footer = () => {
       {/*second part*/}
       <div className="flex flex-col items-center gap-6 bg-gray-900 py-12">
         <div className="flex items-center gap-2">
-          <Image
-            src="/icons/front-chapter-en.svg"
-            width={197}
-            height={40}
-            alt="FrontChapter Logo"
-          />
+          <Link href="#header">
+            <Image
+              src="/icons/front-chapter-en.svg"
+              width={197}
+              height={40}
+              alt="FrontChapter Logo"
+            />
+          </Link>
         </div>
         <p className="font-medium text-gray-300">
           طراحی و توسعه داده شده با <span className="animate-pulse">❤️</span> در
