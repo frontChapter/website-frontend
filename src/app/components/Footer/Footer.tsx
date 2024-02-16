@@ -66,7 +66,7 @@ const Footer = () => {
   return (
     <footer className="pt-12">
       {/*first part*/}
-      <div className="container flex flex-col items-center justify-center gap-6 bg-zinc-800">
+      <div className="flex flex-col items-center justify-center gap-6 bg-zinc-800">
         <div className="mx-auto pt-10">
           <Link href="#header">
             <Image
