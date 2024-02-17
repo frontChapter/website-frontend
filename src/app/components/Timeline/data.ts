@@ -71,13 +71,13 @@ export const confDayTimeline: TimelineItemType[] = [
     link: "https://linkedin.com/in/amir-kabiri/",
   },
   {
-    profile: "/speakers/zahra-khanjani.jpeg",
-    speaker: "زهرا خانجانی",
-    title: "از کد بد به کد خوب",
+    profile: "/speakers/pouria.jpg",
+    speaker: "پوریا باباعلی",
+    title: "بدهی فنی",
     start: "۱۱:۴۰",
     end: "۱۲:۰۰",
     type: "speaker",
-    link: "https://linkedin.com/in/zahra-khanjani/",
+    link: "https://www.linkedin.com/in/pouriya-babaali/",
   },
   {
     profile: "/speakers/hossein-mousavi.jpeg",

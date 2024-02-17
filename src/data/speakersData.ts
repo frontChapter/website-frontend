@@ -59,11 +59,11 @@ export const speakersData: TSpeakerCard[] = [
   },
   {
     avatar: imageAvatarFive,
-    fullName: "زهرا خانجانی",
-    position: "برنامه‌نویس فرانت‌اند",
-    company: "چپتر لید آیتول",
+    fullName: "پوریا باباعلی",
+    position: "مهندس نرم‌افزار",
+    company: "مدرس در کوئرا",
     socials: {
-      linkedin: "https://linkedin.com/in/zahra-khanjani",
+      linkedin: "https://www.linkedin.com/in/pouriya-babaali/",
     },
   },
   {
