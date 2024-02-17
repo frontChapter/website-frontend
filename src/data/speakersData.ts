@@ -20,6 +20,7 @@ export const speakersData: TSpeakerCard[] = [
       website: "https://roocket.ir/",
       linkedin: "https://linkedin.com/in/hesam-mousavi-305454ab",
       instagram: "https://www.instagram.com/roocketir/",
+      github: "https://github.com/Hesammousavi",
     },
   },
   {

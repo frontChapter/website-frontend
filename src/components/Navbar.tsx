@@ -6,7 +6,10 @@ import { RiCouponFill, RiMenuLine } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <header className="bg-[background: rgba(24, 24, 27, 0.80)] sticky top-0 z-50 border-b border-gray-700 backdrop-blur-lg">
+    <header
+      id="header"
+      className="bg-[background: rgba(24, 24, 27, 0.80)] sticky top-0 z-50 border-b border-gray-700 backdrop-blur-lg"
+    >
       <nav className="container flex items-center justify-between gap-4 py-3 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:py-6">
         <ul className="hidden items-center justify-start gap-4 text-center text-base leading-6 lg:flex">
           {navbarLinks.map(({ href, title }) => (
