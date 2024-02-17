@@ -1,8 +1,8 @@
 import { RiCouponLine } from "react-icons/ri";
 
-import Image from "next/image";
 import waveDesktop from "@/assets/images/home/participants-wave-desktop.png";
 import waveMobile from "@/assets/images/home/participants-wave-mobile.png";
+import Image from "next/image";
 import getParticipantList, { Participant } from "./getParticipantList";
 
 const Participants = async () => {
@@ -35,12 +35,12 @@ const Participants = async () => {
           <RiCouponLine className="size-16 text-orange-500" />
           <div className="flex flex-col items-center gap-2 md:gap-4">
             <h2 className="text-center text-3xl font-bold ">شرکت کنندگان</h2>
-            <div className="flex items-center gap-2 text-xl text-zinc-400 md:text-2xl">
+            {/* <div className="flex items-center gap-2 text-xl text-zinc-400 md:text-2xl">
               <strong className="text-orange-500">
                 {participantList.length.toLocaleString("fa-IR")}
               </strong>{" "}
               <span>شرکت کننده تا این لحظه</span>
-            </div>
+            </div> */}
             <div className="flex items-center gap-2 rounded bg-zinc-800 p-3 text-zinc-300">
               <i className="size-3 rounded-full bg-green-600"></i>
               <span className="text-sm font-bold">اطلاعات زنده</span>
