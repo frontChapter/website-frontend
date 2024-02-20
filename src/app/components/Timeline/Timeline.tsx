@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Timeline.styles.module.scss";
+import styles from "./Timeline.styles.module.css";
 import { TimelineItemType } from "./Timeline.types";
 import { confDayTimeline, nightTimeline } from "./data";
 

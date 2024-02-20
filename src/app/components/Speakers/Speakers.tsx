@@ -2,7 +2,7 @@ import { speakersData } from "@/data/speakersData";
 import { Fragment } from "react";
 import { RiMicLine } from "react-icons/ri";
 import SpeakerCard from "./SpeakerCard";
-import styles from "./Speakers.styles.module.scss";
+import styles from "./Speakers.styles.module.css";
 
 export default function Speakers() {
   return (
