@@ -1,6 +1,6 @@
 .speakersSection {
   @apply relative py-6 lg:pb-44 lg:pt-12;
   &::before {
-    @apply bg-none lg:absolute lg:inset-0 lg:w-screen lg:bg-[url("/images/speakers\_lines.svg")] lg:bg-contain lg:bg-bottom lg:bg-no-repeat lg:content-["_"];
+    @apply bg-none lg:absolute lg:inset-0 lg:w-full lg:bg-[url("/images/speakers\_lines.svg")] lg:bg-contain lg:bg-bottom lg:bg-no-repeat lg:content-["_"];
   }
 }
