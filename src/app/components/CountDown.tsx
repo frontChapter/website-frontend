@@ -1,10 +1,11 @@
 "use client";
 
-import WaveMobile from "@/assets/images/home/count-down-wave-mobile.svg";
-import Wave from "@/assets/images/home/count-down-wave.svg";
 import { conferenceDateTime } from "@/data/timing";
+import moment from "moment";
+import Wave from "@/assets/images/home/count-down-wave.svg";
+import WaveMobile from "@/assets/images/home/count-down-wave-mobile.svg";
 import Image from "next/image";
-import React, { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { HiOutlineClock } from "react-icons/hi";
 
 export default function CountDown() {
@@ -35,30 +36,18 @@ export default function CountDown() {
 }
 
 const CountDownTimer = () => {
-  const calculateTimeRemaining = () => {
-    const now = new Date().getTime();
-    const target = conferenceDateTime.getTime();
-    const timeRemaining = target - now;
+  const [now, setNow] = useState(Date.now());
+  const duration = moment.duration(
+    Math.max(moment(conferenceDateTime).diff(now), 0),
+  );
 
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-    );
-    const minutes = Math.floor(
-      (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
-    );
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    return { days, hours, minutes, seconds };
-  };
-
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
-
-  React.useEffect(() => {
+  /**
+   * Update the current time every second
+   */
+  useEffect(() => {
     const interval = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining());
+      setNow(Date.now());
     }, 1000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -67,19 +56,19 @@ const CountDownTimer = () => {
       {[
         {
           label: "ثانیه",
-          value: timeRemaining.seconds,
+          value: duration.seconds(),
         },
         {
           label: "دقیقه",
-          value: timeRemaining.minutes,
+          value: duration.minutes(),
         },
         {
           label: "ساعت",
-          value: timeRemaining.hours,
+          value: duration.hours(),
         },
         {
           label: "روز",
-          value: Math.trunc(timeRemaining.days),
+          value: Math.trunc(duration.asDays()),
         },
       ].map(({ label, value }) => (
         <Fragment key={label}>
