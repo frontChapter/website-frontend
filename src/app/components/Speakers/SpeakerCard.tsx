@@ -1,7 +1,7 @@
 import { TSpeakerCard } from "@/types/home/speakerCard.type";
 import Image from "next/image";
 import SpeakerSocials from "./SpeakerSocials";
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
 
 const SpeakerCard = ({
   avatar,
