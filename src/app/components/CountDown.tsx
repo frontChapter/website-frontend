@@ -3,6 +3,7 @@
 import WaveMobile from "@/assets/images/home/count-down-wave-mobile.svg";
 import Wave from "@/assets/images/home/count-down-wave.svg";
 import { conferenceDateTime } from "@/data/timing";
+import { calculateTimeRemaining } from "@/utils/countDown";
 import Image from "next/image";
 import React, { Fragment, useState } from "react";
 import { HiOutlineClock } from "react-icons/hi";
@@ -35,28 +36,13 @@ export default function CountDown() {
 }
 
 const CountDownTimer = () => {
-  const calculateTimeRemaining = () => {
-    const now = new Date().getTime();
-    const target = conferenceDateTime.getTime();
-    const timeRemaining = target - now;
-
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-    );
-    const minutes = Math.floor(
-      (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
-    );
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    return { days, hours, minutes, seconds };
-  };
-
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+  const [timeRemaining, setTimeRemaining] = useState(
+    calculateTimeRemaining(conferenceDateTime),
+  );
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining());
+      setTimeRemaining(calculateTimeRemaining(conferenceDateTime));
     }, 1000);
 
     return () => clearInterval(interval);
