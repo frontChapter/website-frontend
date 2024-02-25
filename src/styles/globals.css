@@ -9,16 +9,18 @@ html {
 body {
   &::-webkit-scrollbar {
     width: 8px;
-    height: 8px;
   }
+
   &::-webkit-scrollbar-track {
-    background: transparent;
+    background: #333;
   }
+
   &::-webkit-scrollbar-thumb {
-    background: #ffffff;
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: #dadada;
+    background: #555;
+    border-radius: 8px;
+
+    &:hover {
+      background: #dadada;
+    }
   }
 }
