@@ -51,28 +51,30 @@ const CountDownTimer = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const times = [
+    {
+      label: "ثانیه",
+      value: duration.seconds(),
+    },
+    {
+      label: "دقیقه",
+      value: duration.minutes(),
+    },
+    {
+      label: "ساعت",
+      value: duration.hours(),
+    },
+    {
+      label: "روز",
+      value: Math.trunc(duration.asDays()),
+    },
+  ];
+
   return (
     <div className="mt-7 flex gap-3 lg:mt-8 lg:gap-6">
-      {[
-        {
-          label: "ثانیه",
-          value: duration.seconds(),
-        },
-        {
-          label: "دقیقه",
-          value: duration.minutes(),
-        },
-        {
-          label: "ساعت",
-          value: duration.hours(),
-        },
-        {
-          label: "روز",
-          value: Math.trunc(duration.asDays()),
-        },
-      ].map(({ label, value }) => (
+      {[...times].map(({ label, value }, index) => (
         <Fragment key={label}>
-          <div className="flex w-12 flex-col text-center lg:w-24" key={label}>
+          <div className="flex w-12 flex-col text-center lg:w-24">
             <span
               className="text-3xl/snug text-green-500 lg:text-5xl/snug"
               suppressHydrationWarning

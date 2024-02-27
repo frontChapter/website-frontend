@@ -5,3 +5,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #333;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 8px;
+
+    &:hover {
+      background: #dadada;
+    }
+  }
+}

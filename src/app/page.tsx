@@ -11,6 +11,7 @@ import Navbar from "@/components/Navbar";
 import Participants from "./components/Participants/Participants";
 import Speakers from "./components/Speakers/Speakers";
 import Timeline from "./components/Timeline";
+import { Sponsors } from "./components/Sponsor";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <ConferenceLocation />
         <ConferenceTicket />
         <AdditionalPlans />
+        <Sponsors />
         <Footer />
         {/* <Tweets /> */}
       </main>
