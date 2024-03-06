@@ -30,11 +30,11 @@ export default function CountDown() {
       </div>
       <CountDownTimer />
       <p className="text-xl text-zinc-400 lg:mt-8 lg:text-3xl/snug">
-        گذشته از آخرین دورهمی حضوری
+        از همایش سال ۱۴۰۲ گذشته
       </p>
     </section>
   );
-} 
+}
 
 const CountDownTimer = () => {
   const calculateDuration = (start: number, end: number) => {
