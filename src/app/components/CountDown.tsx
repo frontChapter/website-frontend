@@ -1,7 +1,6 @@
 "use client";
 
 import { conferenceDateTime } from "@/data/timing";
-import moment from "moment";
 import Wave from "@/assets/images/home/count-down-wave.svg";
 import WaveMobile from "@/assets/images/home/count-down-wave-mobile.svg";
 import Image from "next/image";
@@ -24,26 +23,40 @@ export default function CountDown() {
       <HiOutlineClock className="absolute inset-y-0 -z-10 size-60 text-zinc-800/20 lg:size-[460px]" />
 
       <div className="flex flex-col gap-2 text-center text-2xl lg:text-4xl">
-        <strong className="font-bold">ساعت‌ها رو دوباره کوک کردیم</strong>
-        <span className="text-zinc-400">اینجا ثانیه‌ها ارزشمندند</span>
+        <strong className="font-bold">دلتنگتون هستیم</strong>
+        <span className="text-zinc-400">
+          به خاطر خاطره‌های زیبایی که ساختیم
+        </span>
       </div>
       <CountDownTimer />
       <p className="text-xl text-zinc-400 lg:mt-8 lg:text-3xl/snug">
-        تا شروع دومین همایش فرانت چپتر
+        از همایش سال ۱۴۰۲ گذشته
       </p>
     </section>
   );
 }
 
 const CountDownTimer = () => {
-  const [now, setNow] = useState(Date.now());
-  const duration = moment.duration(
-    Math.max(moment(conferenceDateTime).diff(now), 0),
-  );
+  const calculateDuration = (start: number, end: number) => {
+    const totalSeconds = Math.floor((end - start) / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = Math.floor(totalSeconds % 60);
 
-  /**
-   * Update the current time every second
-   */
+    return {
+      days,
+      hours,
+      minutes,
+      seconds,
+    };
+  };
+
+  const [now, setNow] = useState(Date.now());
+  const conferenceDate = conferenceDateTime.getTime();
+  const duration = calculateDuration(now, conferenceDate);
+
+  // Update the current time every second
   useEffect(() => {
     const interval = setInterval(() => {
       setNow(Date.now());
@@ -54,32 +67,32 @@ const CountDownTimer = () => {
   const times = [
     {
       label: "ثانیه",
-      value: duration.seconds(),
+      value: duration.seconds,
     },
     {
       label: "دقیقه",
-      value: duration.minutes(),
+      value: duration.minutes,
     },
     {
       label: "ساعت",
-      value: duration.hours(),
+      value: duration.hours,
     },
     {
       label: "روز",
-      value: Math.trunc(duration.asDays()),
+      value: duration.days,
     },
   ];
 
   return (
     <div className="mt-7 flex gap-3 lg:mt-8 lg:gap-6">
-      {[...times].map(({ label, value }, index) => (
+      {[...times].map(({ label, value }) => (
         <Fragment key={label}>
           <div className="flex w-12 flex-col text-center lg:w-24">
             <span
               className="text-3xl/snug text-green-500 lg:text-5xl/snug"
               suppressHydrationWarning
             >
-              {value.toLocaleString("fa-IR")}
+              {Math.abs(value).toLocaleString("fa-IR")}
             </span>
             <span className="text-zinc-500 lg:text-xl">{label}</span>
           </div>
