@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/frontChapter/website-frontend/compare/v1.2.1...v1.3.0) (2024-03-07)
+
+
+### Features
+
+* add required assets for sponsor section ([905c883](https://github.com/frontChapter/website-frontend/commit/905c883c4a4edc0767d4cf0fa33adb78e50850b3))
+* add Sponsor component ([e8dde30](https://github.com/frontChapter/website-frontend/commit/e8dde30de596bb9f1746d1b2c27d26186d650f21))
+* add static sponsors data ([a40f44a](https://github.com/frontChapter/website-frontend/commit/a40f44a22ed11317ad7d7162db5ddbaa9dc735bd))
+* change `<CountDown>` text ([c5ef6e6](https://github.com/frontChapter/website-frontend/commit/c5ef6e6d209b71083cedc2eedc97328f992cbca9))
+* customize scrollbar ([8e3a084](https://github.com/frontChapter/website-frontend/commit/8e3a084a2a5468e9cf17c68b5ea172f2872f2887))
+* improve webkit scrollbar style ([2bdca9f](https://github.com/frontChapter/website-frontend/commit/2bdca9fb205a72944eab2353630c6c5aed90b249))
+* update conference time ([59de0b7](https://github.com/frontChapter/website-frontend/commit/59de0b7df32d414ef33bb3e893d7355668c9e2e9))
+* use Sponsor component in home page ([e41143e](https://github.com/frontChapter/website-frontend/commit/e41143e6534fda41591dc21fb5db07518f5cf443))
+
+
+### Bug Fixes
+
+* `<CountDown>` update ([2af8795](https://github.com/frontChapter/website-frontend/commit/2af879563aaac90ff2063a2e815cbe904e15a706))
+* countdown issue ([6b2ea54](https://github.com/frontChapter/website-frontend/commit/6b2ea54d146a9eea9d4fc1ea8760bdf130b63072))
+* fix countdown without using moment ([a482116](https://github.com/frontChapter/website-frontend/commit/a48211643a2efea1bc7b11bb7f799536b86c54cf))
+* fix overflow x in section speakers ([c0bbbb6](https://github.com/frontChapter/website-frontend/commit/c0bbbb63aebcbe25b002dec5874259d0ccbec4ce))
+* remove `sass` and change file type from `.scss` to `.css` ([4cfb689](https://github.com/frontChapter/website-frontend/commit/4cfb68994ef0904e24bd78452d4e25535eaa7a5f))
+
 ## [1.2.1](https://github.com/frontChapter/website-frontend/compare/v1.2.0...v1.2.1) (2024-02-01)
 
 
